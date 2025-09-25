@@ -98,7 +98,7 @@ const Services = () => {
       <div className='max-w-7xl mx-auto px-6 py-12'>
         <div className="text-center mb-12">
           <h2 className="text-3xl font-montserrat md:text-5xl text-gray-900 mb-3">
-            Virtual Orbit's <span className='bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent'>AI SEO Services</span>
+            Virtual Orbit's <span className='bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent'>Ecommerce SEO Services</span>
           </h2>
           <p className="text-lg text-blue-600 mb-8">
             Laying the Groundwork for Long-Term Organic Success

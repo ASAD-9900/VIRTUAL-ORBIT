@@ -10,13 +10,17 @@ import FAQ from "../../Components/Ecommerce SEO Components/FAQ"
 import Pitch from "../../Components/Ecommerce SEO Components/1Pitch"
 import HowDoesItGetLeads from '../../Components/Ecommerce SEO Components/2HowDoesItGetleads'
 import OptimizeYourStore from '../../Components/Ecommerce SEO Components/3OptimizeYourStore'
-import Services from '../../Components/Ecommerce SEO Components/6Services'
-import HireOrDiy from "../../Components/Ecommerce SEO Components/7HireOrDIY"
-import TimeTakes from '../../Components/Ecommerce SEO Components/8TimeItTakes'
-import Worth from "../../Components/Ecommerce SEO Components/9Worth"
+import Services from '../../Components/Ecommerce SEO Components/7Services'
+import HireOrDiy from "../../Components/Ecommerce SEO Components/8HireOrDIY"
+import TimeTakes from '../../Components/Ecommerce SEO Components/9TimeItTakes'
+import Worth from "../../Components/Ecommerce SEO Components/10Worth"
 import ShopifySEO from "../../Components/Ecommerce SEO Components/4ShopifySEO"
 import WooCommerceSEO from "../../Components/Ecommerce SEO Components/5WooCommerceSEO"
-import HowToChoose from '../../Components/Ecommerce SEO Components/HowToChoose'
+import HowToChoose from '../../Components/Ecommerce SEO Components/6HowToChoose'
+import Tips from "../../Components/Ecommerce SEO Components/11Tips"
+
+import SpiralBG from "../../assets/Difference.png"
+
 
 const EcommerceSEO = () => { 
   return (
@@ -41,10 +45,14 @@ const EcommerceSEO = () => {
         <Services/>
         <TimeTakes/>
         <Worth/>
+        <Tips/>
         <FAQ></FAQ>
-        <CTA></CTA>
-        <ContactForm></ContactForm>  
-    </div>
+        <div className="bg-cover bg-center bg-no-repeat w-full 
+            sm:bg-contain md:bg-cover lg:bg-cover"
+            style={{ backgroundImage: `url(${SpiralBG})` }}>
+        <ContactForm></ContactForm> 
+        </div>
+      </div>
   )
 }
 

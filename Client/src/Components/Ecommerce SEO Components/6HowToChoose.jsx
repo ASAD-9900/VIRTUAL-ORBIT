@@ -22,7 +22,7 @@ function HowToChoose() {
               Build Topical Authority and Maximize Discoverability
             </h3>
             
-            <div className="space-y-6 text-white leading-relaxed">
+            <div className="space-y-6 text-gray-900 leading-relaxed">
               <p className="text-lg">
                 AI has fundamentally reshaped how search engines interpret, rank and deliver 
                 content to the end user.
