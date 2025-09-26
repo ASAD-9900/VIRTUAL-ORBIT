@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from "react";
 import Lenis from "lenis";
 
 import Hero from "../../Components/Global Components/HeroSubPage"
