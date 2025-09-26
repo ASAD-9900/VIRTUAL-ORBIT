@@ -1,11 +1,9 @@
 import React from 'react'
+import Lenis from "lenis";
+
 import Hero from "../../Components/Global Components/HeroSubPage"
 import Marqee from "../../Components/Global Components/Marqee"
 import ContactForm from "../../Components/Global Components/ContactForm"
-// import Services from "../../Components/Ecommerce SEO Components/Services"
-// import Pitch from '../../Components/Ecommerce SEO Components/Pitch'
-
-import CTA from '../../Components/Ecommerce SEO Components/CTA'
 import FAQ from "../../Components/Ecommerce SEO Components/FAQ"
 import Pitch from "../../Components/Ecommerce SEO Components/1Pitch"
 import HowDoesItGetLeads from '../../Components/Ecommerce SEO Components/2HowDoesItGetleads'
@@ -23,6 +21,31 @@ import SpiralBG from "../../assets/Difference.png"
 
 
 const EcommerceSEO = () => { 
+   const lenisRef = useRef(null);
+
+  useEffect(() => {
+    const lenis = new Lenis({
+      lerp: 0.1,   
+      smooth: true,
+      wheelMultiplier: 1.3, 
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+    lenisRef.current = lenis;
+
+    
+    lenis.scrollTo(0);
+
+    return () => {
+      lenis.destroy(); 
+    };
+  }, []);
+
   return (
     <div>
         <Hero></Hero>
