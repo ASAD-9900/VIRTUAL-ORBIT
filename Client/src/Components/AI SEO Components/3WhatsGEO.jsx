@@ -1,26 +1,17 @@
 import React from 'react';
-import Background from "../../assets/BackGround.jpg"
-import { TrendingUp} from 'lucide-react';
+import Time from "../../assets/How-long-does-local-seo-take-to-affect.jpeg"
 
-
-function AIVisibilitySection() {
+function GEO() {
   return (
-        <div
-          className="bg-white py-8 px-4 sm:px-6 lg:px-8 xl:pb-30"
-          style={{
-            backgroundImage: `url(${Background})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat"
-          }}
-        >
-        <div className="max-w-7xl mx-auto">
+    <div className="py-8 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto"> 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
           {/* Image */}
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                src={Time}
                 alt="Professional man using tablet for AI optimization"
                 className="w-full h-[500px] object-cover object-center"
               />
@@ -28,14 +19,16 @@ function AIVisibilitySection() {
             </div>
           </div>
 
-          {/* Right */}
+          {/* Content */}
           <div className="space-y-6">
-            <h2 className="text-4xl font-montserrat md:text-5xl lg:text-5xl text-center  text-white mt-8 mb-8 md:mb-15">
-              What Is {' '}
-              <span className="bg-gradient-to-r text-bold from-orange-400 via-pink-400  to-purple-500 bg-clip-text text-transparent">
-                AI SEO Service? 
-              </span>   
+            <h2 className="text-3xl sm:text-3xl lg:text-5xl font-montserrat text-white leading-tight">What Is
+              <span className='bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent'> Generative Engine Optimization </span>Service?
             </h2>
+            
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-400 leading-relaxed">
+              Build Topical Authority and Maximize Discoverability
+            </h3>
+            
             <div className="space-y-6 text-white leading-relaxed">
               <p className="text-lg">
                 AI has fundamentally reshaped how search engines interpret, rank and deliver 
@@ -49,7 +42,7 @@ function AIVisibilitySection() {
               </p>
               
               <p className="text-lg">
-                <span className="font-bold text-green-300">Zero-Click Search</span> is commonplace, 
+                <span className="font-bold text-green-600">Zero-Click Search</span> is commonplace, 
                 with users getting the information they need directly from AI-generated answers, 
                 often without visiting a website. That means fewer clicks, lower organic traffic 
                 and more missed opportunities unless your business is actively optimized for AI 
@@ -59,15 +52,8 @@ function AIVisibilitySection() {
           </div>
         </div>
       </div>
-      {/* Optional CTA Button */}
-          <div className=" mt-10 flex justify-center  pb-4">
-          <div className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
-            <span className="mr-3">More About AI Optimization?</span>
-            <TrendingUp className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-          </div>
-        </div>
-    </div>
+    </div> 
   );
 }
 
-export default AIVisibilitySection;
+export default GEO;

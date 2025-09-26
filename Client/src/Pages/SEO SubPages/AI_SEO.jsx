@@ -4,16 +4,22 @@ import HeroSubPage from "../../Components/Global Components/HeroSubPage"
 import ContactForm from "../../Components/Global Components/ContactForm"
 import Pitch from "../../Components/AI SEO Components/1Pitch"
 import WhatsAiSEO from "../../Components/AI SEO Components/2WhatsAiSEO"
-import Importance from '../../Components/AI SEO Components/Importance'
-import WhyAiSeo from '../../Components/AI SEO Components/3Why'
-import CTA from '../../Components/AI SEO Components/CTA'
-import FAQ from '../../Components/AI SEO Components/7FAQ'
-import MoreLeads from "../../Components/AI SEO Components/4Moreleads"
-import Services from "../../Components/AI SEO Components/5Services"
-import Tips from "../../Components/AI SEO Components/6Tips"
-import ChooseAgency from "../../Components/AI SEO Components/6ChooseAgency"
-import Need from "../../Components/AI SEO Components/5Need"
+import WhyAiSeo from '../../Components/AI SEO Components/5Why'
+import FAQ from '../../Components/AI SEO Components/FAQ'
+import MoreLeads from "../../Components/AI SEO Components/6Moreleads"
+import Services from "../../Components/AI SEO Components/8Services"
+import Tips from "../../Components/AI SEO Components/Tips"
+import ChooseAgency from "../../Components/AI SEO Components/9ChooseAgency"
+import Need from "../../Components/AI SEO Components/7Need"
 import SpiralBG from "../../assets/Difference.png"
+import AEO from "../../Components/AI SEO Components/4WhatsAEO"
+import GEO from "../../Components/AI SEO Components/3WhatsGEO"
+import Time from "../../Components/AI SEO Components/10Time"
+import Worth from "../../Components/AI SEO Components/11Worth"
+
+
+import CornerBG from "../../assets/CornerBG.png"
+
 
 
 const AI_SEO = () => {
@@ -24,9 +30,13 @@ const AI_SEO = () => {
         </HeroSubPage>
         <Pitch></Pitch>
         <WhatsAiSEO></WhatsAiSEO>
+        <div className='bg-gradient-to-b from-[#0f3064] via-[#2563eb] to-[#0f3064] max-w-full'>
+          <GEO/>
+          <AEO/>
+        </div>
         <WhyAiSeo></WhyAiSeo>
         <MoreLeads/>
-        <div className="lg:my-5 lg:mt-4 bg-white">
+        <div className="lg:my-5 lg:mt-10 bg-white">
             <Marqee
             texts={[<span className="text-[#4e38f5]">Virtual Orbit -</span>, "-  Local SEO"]}
             velocity={50}
@@ -36,6 +46,13 @@ const AI_SEO = () => {
         <Need/>
         <Services/>
         <ChooseAgency/>
+        <div className='bg-cover bg-center bg-no-repeat'
+        style={{ backgroundImage: `url(${CornerBG})` }}>
+        <Time/>
+        <Worth/>
+        </div>
+        <Time/>
+        <Worth/>
         <Tips/>
         <FAQ></FAQ>
         <div className="bg-gradient-to-b from-[#0f3166] via-[#044b88]  to-white">

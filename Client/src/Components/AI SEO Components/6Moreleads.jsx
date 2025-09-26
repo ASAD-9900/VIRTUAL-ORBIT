@@ -6,7 +6,7 @@ import SpiralBG from "../../assets/Difference.png"
 const DigitalMarketingIntro = () => {
   return (
         <section 
-        className="max-w-full bg-cover bg-center bg-no-repeat" 
+        className="max-w-full bg-cover bg-center bg-no-repeat xl:pb-50  " 
         style={{
         backgroundImage: `url(${SpiralBG})`
         }}
@@ -33,6 +33,9 @@ const DigitalMarketingIntro = () => {
                     email campaigns and pay-per-click advertising
                   </a>
                   . The goal is to reach your target audience where they're already spending their time - online.
+                </p>
+                <p className="text-base mt-8 md:text-lg text-white leading-relaxed">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam consequuntur eum aliquid voluptates tempora itaque placeat eveniet? Delectus officiis provident aliquam numquam modi, dignissimos nulla voluptatum dolor consequuntur quam, quis unde, nesciunt suscipit. Expedita blanditiis ipsam distinctio tempore quis!
                 </p>
               </div>
               

@@ -52,7 +52,7 @@ const DigitalMarketingBenefits = () => {
 
   return (
     <section className="max-w-full bg-gradient-to-b from-[#0f3064] via-[#2563eb] to-[#0f3064]" >
-      <div className="max-w-6xl mx-auto px-6 py-6  space-y-16">
+      <div className="max-w-7xl mx-auto px-6 py-6  space-y-16">
         <div className='mb-6'>
             <h2 className="text-4xl font-montserrat md:text-5xl lg:text-5xl text-center  text-white mt-8 mb-8 md:mb-15">
               How To Do {' '}
