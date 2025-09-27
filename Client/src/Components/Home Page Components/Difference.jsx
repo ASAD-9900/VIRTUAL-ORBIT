@@ -4,7 +4,7 @@ import CircleBG from "../../assets/Difference.png"
 const DigitalVsTraditionalMarketing = () => {
   return (
       <section 
-        className="max-w-full"
+        className="max-w-full lg:pb-40"
         style={{
           backgroundImage: `url(${CircleBG})`,
           backgroundSize: 'cover',

@@ -12,14 +12,14 @@ const DigitalMarketingIntro = () => {
         backgroundImage: `url(${GraphBG})`
         }}
         >
-         <div className='max-w-6xl mx-auto px-6  py-6'>
+         <div className='max-w-7xl mx-auto px-6  py-6'>
       {/* Digital Marketing Section */}
       <div className="flex flex-col lg:flex-row items-center gap-12">
         {/* Content  */}
         <div className="lg:w-2/3 space-y-6">
           <div>
             <h2 className="text-3xl font-montserrat md:text-5xl  text-gray-900 mb-5">
-              What Is Digital Marketing?
+              What Is <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text  text-transparent">Digital Marketing Service</span>?
             </h2>
             <p className="text-lg text-gray-600 font-medium">
               Connect with Your Customers Where They Spend Their Time Online

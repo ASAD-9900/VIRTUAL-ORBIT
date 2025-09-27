@@ -230,15 +230,15 @@ const Home = () => {
         </LazySection>
 
         <LazySection>
+          <DmResults />
+        </LazySection>
+
+        <LazySection>
           <Demo />
         </LazySection>
 
         <LazySection className="hidden md:block">
           <BentoGrid />
-        </LazySection>
-
-        <LazySection>
-          <DmResults />
         </LazySection>
 
         <LazySection>

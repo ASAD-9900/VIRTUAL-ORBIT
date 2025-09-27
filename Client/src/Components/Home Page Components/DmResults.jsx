@@ -26,7 +26,7 @@ const LocalSEOVital = () => {
       {/* Header Section */}
       <div className="text-center mb-12">
         <h3 className="text-3xl md:text-5xl font-montserrat text-gray-900 mb-2">
-          How <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text font-bold text-transparent">Digital Marketing Services</span> Benifit You?
+          How <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text  text-transparent">Digital Marketing Services</span> Benifit You?
         </h3>
         <p className="text-blue-700 text-lg font-semibold">
           Create a Lasting Impression Across Search Engines and Your Prospects
@@ -34,12 +34,12 @@ const LocalSEOVital = () => {
       </div>
 
       {/* Intro Paragraph */}
-      <p className="text-gray-700 text-lg leading-relaxed max-w-5xl mx-auto  mb-12">
+      <p className="text-gray-700 text-lg leading-relaxed max-w-6xl mx-auto  mb-12">
         In today's competitive digital landscape, investing in the best local SEO services could mean the difference between a thriving business and a failing establishment. Where does local digital marketing fall in your campaign priorities?
       </p>
 
       {/* Main Content Section */}
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-4 max-w-6xl mx-auto mb-12">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-4 max-w-7xl mx-auto mb-12">
         {/* Image Side */}
         <div className="lg:w-1/2 flex justify-center">
           <img
