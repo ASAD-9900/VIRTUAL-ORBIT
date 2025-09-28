@@ -18,15 +18,15 @@ const DigitalMarketingIntro = () => {
         {/* Content  */}
         <div className="lg:w-2/3 space-y-6">
           <div>
-            <h2 className="text-3xl font-montserrat md:text-5xl  text-gray-900 mb-5">
+            <h2 className="text-4xl md:text-5xl lg:text-5xl text-center sm:text-start font-montserrat md:text-5xl  text-gray-900 mb-5">
               What Is <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text  text-transparent">Digital Marketing Service</span>?
             </h2>
-            <p className="text-lg text-gray-600 font-medium">
+            <p className="text-lg text-center sm:text-start text-blue-600 font-medium">
               Connect with Your Customers Where They Spend Their Time Online
             </p>
           </div>
           
-          <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+          <p className="text-lg lg:text-xl text-gray-700 leading-relaxed">
             Digital marketing is the use of online channels, platforms, and technologies to promote your business, products, 
             or services to potential customers. It encompasses everything from search engine optimization (SEO) and social media 
             marketing to{' '}
@@ -37,7 +37,7 @@ const DigitalMarketingIntro = () => {
           </p>
           
           {/* button */}
-          <div className=" mt-10 mb-18 pb-4">
+          <div className=" mt-10 md:mb-18 pb-4 flex justify-center sm:justify-start">
           <div className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
             <span className="mr-3">Ready to Get Started?</span>
             <TrendingUp className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />

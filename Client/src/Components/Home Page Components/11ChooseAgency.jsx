@@ -28,28 +28,28 @@ const DigitalMarketingTips = () => {
   );
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8">
+    <div className="max-w-7xl mx-auto px-4 py-8">
       {/* Heading */}
-      <h2 className="text-3xl md:text-5xl font-montserrat md:text-4xl  text-center text-gray-800 mb-6">
-        How to Choose A Digital Marketing Agency?
+      <h2 className="text-3xl md:text-5xl font-montserrat text-center text-gray-800 mb-6">
+        How to Choose A <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text  text-transparent">Digital Marketing Agency</span>?
       </h2>
       
       {/* Description */}
-      <p className="text-gray-700 text-lg mb-8 leading-relaxed max-w-5xl mx-auto">
-        Looking to accelerate your business growth through digital marketing? Implement these proven digital marketing strategies to increase your online visibility, attract more customers, and boost your revenue:
+      <p className="text-gray-700 text-sm sm:text-lg lg:text-xl mb-8 leading-relaxed max-w-7xl mx-auto">
+        Looking to accelerate your business growth through digital marketing? Implement these proven digital marketing strategies to increase your online visibility, attract more customers, and boost your revenue: Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quod.
       </p>
       
       {/* Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 lg:gap-12 mb-8">
         {/* Left list */}
-        <div className="space-y-4 mx-auto text-lg">
+        <div className="space-y-4 md:mx-auto text-sm sm:text-lg lg:text-xl">
           {leftColumnTips.map((tip, index) => (
             <TipItem key={index}>{tip}</TipItem>
           ))}
         </div>
         
         {/* Right list */}
-        <div className="space-y-4 md:mx-auto text-lg">
+        <div className="space-y-4 md:mx-auto text-sm sm:text-lg lg:text-xl">
           {rightColumnTips.map((tip, index) => (
             <TipItem key={index}>{tip}</TipItem>
           ))}
@@ -57,7 +57,7 @@ const DigitalMarketingTips = () => {
       </div>
       
       {/* bottom text */}
-      <div className="space-y-4 text-gray-700 leading-relaxed">
+      <div className="space-y-4 text-gray-700  text-sm sm:text-lg lg:text-xl leading-relaxed">
         <p>
           Implementing these digital marketing strategies takes time, expertise, and consistent effort. Partnering with a professional digital marketing agency can help you execute these tactics effectively while you focus on running your business.
         </p>

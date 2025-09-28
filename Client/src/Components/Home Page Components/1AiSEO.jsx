@@ -101,7 +101,7 @@ const AiSectionHome = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left Column - Text Content */}
           <div className="space-y-6">
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg sm:text-lg lg:text-xl text-gray-700 leading-relaxed">
               Rapid advances in generative artificial intelligence (AI) models have reshaped 
               how content is discovered and consumed. Traditional search engine 
               optimization (SEO) is no longer enough to reach those looking for your 
@@ -109,8 +109,8 @@ const AiSectionHome = () => {
               to optimize for AI-first discovery.
             </p>
             
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Thrive is one of the{' '}
+            <p className="text-lg sm:text-lg lg:text-xl text-gray-700 leading-relaxed">
+              Virtual Orbit is one of the{' '}
               <span className="text-green-600 font-semibold underline decoration-green-200 decoration-2">
                 top generative engine optimization companies
               </span>{' '}
@@ -180,7 +180,7 @@ const AiSectionHome = () => {
                   <h3 className="text-2xl font-bold text-gray-800">{activeContent.title}</h3>
                 </div>
                 
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-lg sm:text-lg lg:text-xl text-gray-700 leading-relaxed">
                   {activeContent.description}
                 </p>
               </div>

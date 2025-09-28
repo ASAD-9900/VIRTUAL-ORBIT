@@ -92,26 +92,33 @@
 import React, { useEffect, useRef, lazy, Suspense, useMemo } from "react";
 import Lenis from "lenis";
 
+import CornerBG from "../../assets/CornerBG.png"
+import SpiralBG from "../../assets/Difference.png"
+
 // Critical above-fold components - load immediately
 import HomeHero from "../../Components/Home Page Components/HomeHero";
-import AiSection from "../../Components/Home Page Components/HomeAI";
+import AiSection from "../../Components/Home Page Components/1AiSEO";
 
 // Lazy load all below-fold components
-const DmDefine = lazy(() => import("../../Components/Home Page Components/DmDefine"));
 const Marqee = lazy(() => import("../../Components/Global Components/Marqee"));
-const HomeFAQ = lazy(() => import("../../Components/Home Page Components/HomeFAQ"));
-const WhyChooseUs = lazy(() => import("../../Components/Global Components/WhyChooseUs"));
+const WhyChooseUs = lazy(() => import("../../Components/Home Page Components/13WhyChooseUs"));
 const Contact = lazy(() => import("../../Components/Global Components/ContactForm"));
-const Services = lazy(() => import("../../Components/Home Page Components/Services"));
-const Difference = lazy(() => import("../../Components/Home Page Components/Difference"));
-const OurProcess = lazy(() => import("../../Components/Home Page Components/OurProcess"));
-const CTA = lazy(() => import("../../Components/Home Page Components/CTA"));
-const Tips = lazy(() => import("../../Components/Home Page Components/Tips"));
+const Services = lazy(() => import("../../Components/Home Page Components/8Services"));
+const Difference = lazy(() => import("../../Components/Home Page Components/6Difference"));
+const OurProcess = lazy(() => import("../../Components/Home Page Components/12OurProcess"));
+const ChooseAgency = lazy(() => import("../../Components/Home Page Components/11ChooseAgency"));
 const Demo = lazy(() => import("../../Components/Demos/demo"));
-const DmIntro = lazy(() => import("../../Components/Home Page Components/DmIntro"));
-const DmWhy = lazy(() => import("../../Components/Home Page Components/DmWhy"));
-const DmResults = lazy(() => import("../../Components/Home Page Components/DmResults"));
-const BentoGrid = lazy(() => import("../../Components/Global Components/BentoGrids"));
+const DmIntro = lazy(() => import("../../Components/Home Page Components/2DmIntro"));
+const DmWhy = lazy(() => import("../../Components/Home Page Components/3DmNeed"));
+const DmResults = lazy(() => import("../../Components/Home Page Components/7Benifit"));
+const Filler1 = lazy(() => import("../../Components/Home Page Components/4Filler"));
+const Filler2 = lazy(() => import("../../Components/Home Page Components/5Filler"));
+const Time = lazy(() => import("../../Components/Home Page Components/9Time"));
+const Worth = lazy(() => import("../../Components/Home Page Components/10Worth"));
+const Tips = lazy(() => import("../../Components/Home Page Components/14Tips"));
+const Faq = lazy(() => import("../../Components/Home Page Components/15FAQ"));
+
+
 
 // Optimized loading component
 const SectionLoader = React.memo(() => (
@@ -225,6 +232,16 @@ const Home = () => {
           <DmWhy />
         </LazySection>
 
+        <div className='bg-gradient-to-b from-[#0f3064] via-[#2563eb] to-[#0f3064] max-w-full'>
+        <LazySection>
+          <Filler1 />
+        </LazySection>
+
+        <LazySection>
+          <Filler2 />
+        </LazySection>
+        </div>
+        
         <LazySection className="bg-gray-50">
           <Difference />
         </LazySection>
@@ -238,11 +255,21 @@ const Home = () => {
         </LazySection>
 
         <LazySection className="hidden md:block">
-          <BentoGrid />
+          <Services />
         </LazySection>
 
+        <LazySection className="">
+          <Time />
+        </LazySection>
+
+        <div className="bg-gradient-to-b from-[#ccd9f4] via-sky-50 to-[#ccd9f4] pt-10">
+        <LazySection className="">
+          <Worth />
+        </LazySection>
+        </div>
+
         <LazySection>
-          <Tips />
+          <ChooseAgency />
         </LazySection>
 
         <LazySection className="lg:mt-5 lg:mb-5">
@@ -253,21 +280,33 @@ const Home = () => {
           />
         </LazySection>
 
-        <LazySection className="bg-gray-50">
+        <div className='bg-cover bg-center bg-no-repeat'
+        style={{ backgroundImage: `url(${CornerBG})` }}>     
+        <LazySection className="">
           <OurProcess />
         </LazySection>
 
         <LazySection>
-          <HomeFAQ />
+          <WhyChooseUs />
+        </LazySection>
+        </div> 
+
+        <LazySection>
+          <Tips />
         </LazySection>
 
         <LazySection>
-          <CTA />
+          <Faq />
         </LazySection>
 
+        <div className="bg-cover bg-center bg-no-repeat w-full 
+            sm:bg-contain md:bg-cover lg:bg-cover"
+            style={{ backgroundImage: `url(${SpiralBG})` }}>
         <LazySection>
           <Contact />
         </LazySection>
+        </div>
+
       </div>
     </div>
   );
