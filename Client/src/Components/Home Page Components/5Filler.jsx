@@ -13,8 +13,9 @@ function Filler() {
           
           {/* Content */}
           <div className="space-y-6 lg:pb-25">
-            <h2 className="text-4xl sm:text-3xl lg:text-5xl text-center sm:text-start font-montserrat text-white leading-tight">What Is
-              <span className='bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent'> Answer Engine Optimization </span>Service?
+            <h2 className="text-4xl font-sans sm:text-3xl lg:text-5xl text-center sm:text-start font-montserrat text-gray-200 leading-tight">What Is
+              <span className="font-['Playfair_Display',serif] italic bg-gradient-to-r from-pink-500 via-orange-400 to-pink-400 bg-clip-text text-transparent"> Filler Content
+              </span> Service?
             </h2>
             
             <h3 className="text-lg sm:text-xl font-semibold text-center sm:text-start text-gray-200 leading-relaxed">

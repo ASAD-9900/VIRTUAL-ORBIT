@@ -37,9 +37,9 @@ const HomeHero = () => {
             </svg>
           </a>
         </div>
-        <h1 class="font-montserrat max-w-5xl mx-auto text-center font-base text-4xl sm:text-2xl md:text-5xl lg:text-6xl text-white mb-5 leading-tight sm:leading-snug md:leading-[50px] flex flex-col  sm:gap-6 md:gap-6">
-        <span>AI-Driven Digital Marketing That</span>
-        <span class="text-white">Transform Your Business</span>
+        <h1 class=" max-w-6xl mx-auto text-center font-base text-4xl sm:text-2xl md:text-5xl lg:text-6xl text-white mb-5 leading-tight sm:leading-snug md:leading-[50px] flex flex-col  sm:gap-6 md:gap-6">
+        <span>AI-Driven <span class="">Digital Marketing Agency</span> </span>
+        <span class="text-white ">That Transforms Businesses</span>
       </h1>
         <p
           class="max-w-4xl mx-auto text-center text-xl font-normal leading-7 text-gray-300 mb-9"

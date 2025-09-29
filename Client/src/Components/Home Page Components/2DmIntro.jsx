@@ -18,8 +18,8 @@ const DigitalMarketingIntro = () => {
         {/* Content  */}
         <div className="lg:w-2/3 space-y-6">
           <div>
-            <h2 className="text-4xl md:text-5xl lg:text-5xl text-center sm:text-start font-montserrat md:text-5xl  text-gray-900 mb-5">
-              What Is <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text  text-transparent">Digital Marketing Service</span>?
+            <h2 className="text-4xl md:text-5xl lg:text-5xl text-center sm:text-start font-montserrat md:text-5xl  text-gray-700 mb-5">
+              What Is <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-['Playfair_Display',serif] italic">Digital Marketing Service?</span>
             </h2>
             <p className="text-lg text-center sm:text-start text-blue-600 font-medium">
               Connect with Your Customers Where They Spend Their Time Online

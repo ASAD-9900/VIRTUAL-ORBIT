@@ -15,7 +15,7 @@ const DigitalVsTraditionalMarketing = () => {
       <div className="max-w-6xl mx-auto px-6 pb-30">
         <div className=" mb-5">
           <h3 className="text-3xl font-montserrat md:text-5xl text-center font- text-white mb-6">
-            The Two Approaches to Marketing Your Business
+            The Two Approaches to <span className="font-['Playfair_Display',serif] italic bg-gradient-to-r from-pink-500 via-orange-400 to-pink-400 bg-clip-text text-transparent">Marketing Your Business</span>
           </h3>
           
           <p className="text-lg text-center text-white ">
