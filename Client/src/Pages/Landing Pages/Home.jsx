@@ -32,10 +32,10 @@ const Faq = lazy(() => import("../../Components/Home Page Components/15FAQ"));
 // Optimized loading component
 const SectionLoader = React.memo(() => (
   <div className="flex flex-col gap-6 justify-center items-center py-10 w-full">
-    <div className="relative w-full max-w-4xl h-32 rounded-xl overflow-hidden shadow-md">
+    <div className="relative w-full max-w-4xl h-88 rounded-xl overflow-hidden shadow-md">
       <div className="animate-shimmer absolute inset-0" />
     </div>
-    <div className="flex gap-3 w-full max-w-3xl">
+    <div className="flex gap-3 w-full max-w-7xl">
       <div className="bg-gray-200 rounded-full animate-pulse w-16 h-6"></div>
       <div className="bg-gray-200 rounded-full animate-pulse w-40 h-6"></div>
       <div className="bg-gray-200 rounded-full animate-pulse w-24 h-6"></div>
