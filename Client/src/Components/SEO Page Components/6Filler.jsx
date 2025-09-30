@@ -1,5 +1,5 @@
 import React from "react";
-import TipsBG from "../../assets/top-to-bottom.png"
+import CircleBG from "../../assets/Difference.png"
 
 const DmTips = () => {
   
@@ -25,14 +25,14 @@ const DmTips = () => {
 
   return (
   <section 
-    className="max-w-full py-16 lg:pt-10 bg-cover bg-center xl:pt-30" 
-    style={{ backgroundImage: `url(${TipsBG})` }}
+    className="max-w-full py-8 bg-cover bg-center xl:pt-3" 
+    style={{ backgroundImage: `url(${CircleBG})` }}
   >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> 
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:pb-40"> 
         {/* Header */}
         <div className="md:text-center md:mb-12">
-          <h2 className="text-3xl font-montserrat md:text-5xl text-start sm:text-center text-gray-800 mb-2">
-            Some Tips Regarding <span className='bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent'>Digital Marketing Services</span>  
+          <h2 className="text-3xl font-montserrat md:text-5xl text-start sm:text-center text-gray-200 mb-2">
+            Some Tips Regarding <span className='bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent'>Filler Services</span>  
           </h2>
           <p className="text-gray-400 text-lg text-start sm:text-center font-semibold">
             Create a Lasting Impression Across Search Engines and Your Prospects

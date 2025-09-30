@@ -25,14 +25,14 @@ const DmTips = () => {
 
   return (
   <section 
-    className="max-w-full py-16 lg:pt-10 bg-cover bg-center xl:pt-30" 
+    className="max-w-full  lg:pt-10 bg-cover bg-center xl:pt-25" 
     style={{ backgroundImage: `url(${TipsBG})` }}
   >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> 
         {/* Header */}
         <div className="md:text-center md:mb-12">
           <h2 className="text-3xl font-montserrat md:text-5xl text-start sm:text-center text-gray-800 mb-2">
-            Some Tips Regarding <span className='bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent'>Digital Marketing Services</span>  
+            Some Tips Regarding <span className='bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent'>SEO Services</span>  
           </h2>
           <p className="text-gray-400 text-lg text-start sm:text-center font-semibold">
             Create a Lasting Impression Across Search Engines and Your Prospects
