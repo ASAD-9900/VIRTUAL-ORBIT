@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-  import Lenis from "lenis";
+import Lenis from "lenis";
 
 import SpiralBG from "../../assets/Difference.png"
 

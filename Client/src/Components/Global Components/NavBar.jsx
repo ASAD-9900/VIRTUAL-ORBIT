@@ -48,10 +48,10 @@ const webDevelopmentServices = [
 ]
 
 const creativeServices = [
-  { name: 'Google Ads Management', description: 'Create memorable brand identities', href: '#', icon: CameraIcon },
-  { name: 'Social Media Ads', description: 'Professional video content creation', href: '#', icon: PlayCircleIcon },
-  { name: 'Retargeting/Remarketing', description: 'Capture your brand in the best light', href: '#', icon: CameraIcon },
-  { name: 'Conversion Rate Optimization', description: 'Visual designs that communicate', href: '#', icon: SquaresPlusIcon },
+  { name: 'Google Ads Management', description: 'Create memorable brand identities', href: '/google-ads-management', icon: CameraIcon },
+  { name: 'Meta Ads', description: 'Professional video content creation', href: '/meta-ads-management', icon: PlayCircleIcon },
+  { name: 'Search Engine Marketing', description: 'Capture your brand in the best light', href: '/search-engine-marketing', icon: CameraIcon },
+  { name: 'Lead Generation Service', description: 'Visual designs that communicate', href: '/lead-generation-services', icon: SquaresPlusIcon },
 ]
 
 const socialMedia = [
@@ -170,9 +170,12 @@ export default function NavBar() {
                       ))}
                     </div>
                   </div>
-                  {/* Creative Services Column */}
+
+
+                  {/* PPC Marketing */}
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900 mb-4 border-b border-gray-200 pb-2">Creative Services</h4>
+                    <a href="/ppc-marketing-services"><h4 className="text-lg font-semibold text-gray-900 mb-4 border-b border-gray-200 pb-2 hover:text-blue-700">
+                      Pay Per Click (PPC) Marketing </h4></a>
                     <div className="space-y-3">
                       {creativeServices.map((item) => (
                         <div key={item.name} className="group">

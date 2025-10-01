@@ -13,9 +13,7 @@ const DigitalMarketingIntro = () => {
         }}
         >
          <div className='max-w-7xl mx-auto px-6  py-6'>
-      {/* Digital Marketing Section */}
       <div className="flex flex-col lg:flex-row items-center gap-12">
-        {/* Content  */}
         <div className="lg:w-2/3 space-y-6">
           <div>
             <h2 className="text-4xl md:text-5xl lg:text-5xl text-center sm:text-start font-montserrat md:text-5xl  text-gray-700 mb-5">
@@ -45,7 +43,6 @@ const DigitalMarketingIntro = () => {
         </div>
         </div>
         
-        {/* Image Right */}
         <div className="lg:w-1/2 flex justify-center">
           <img 
             src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx3fA%3D%3D&auto=format&fit=crop&w=2015&q=80" 
