@@ -1,9 +1,8 @@
-import React, { useState , useEffect } from 'react';
-import { Eye, Search, RotateCcw, Rocket } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Eye, Search, RotateCcw, Rocket, TrendingUp } from 'lucide-react';
 
 const AiSection = () => {
   const [activeTab, setActiveTab] = useState('visibility');
-
 
   const tabContents = [
     {
@@ -32,16 +31,29 @@ const AiSection = () => {
     }
   ];
 
+  // Card change every 4 second
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveTab(prevTab => {
+        const currentIndex = tabContents.findIndex(tab => tab.id === prevTab);
+        const nextIndex = (currentIndex + 1) % tabContents.length;
+        return tabContents[nextIndex].id;
+      });
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [tabContents]);
+
   const activeContent = tabContents.find(tab => tab.id === activeTab) || tabContents[0];
 
   return (
-    <div className=" py-16 px-6 ">
+    <div className="py-8 px-6 lg:mb-10">
       <div className="max-w-7xl mx-auto">
-        {/* Header Section */}
+        {/* Heading */}
         <div className="text-center mb-16">
           <h1 className="text-4xl font-sans md:text-5xl lg:text-6xl text-gray-700 mb-4">
             The Best AI SEO Agency for{' '}
-            <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-['Playfair_Display',serif] italic ">
+            <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-['Playfair_Display',serif] italic">
               AI Visibility
             </span>
           </h1>
@@ -50,22 +62,21 @@ const AiSection = () => {
           </p>
         </div>
 
-        {/* Stats Cards */}
+        {/* Card DIv */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
-          {/* AI Referral Traffic Card */}
-          <div className="group relative bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 rounded-3xl p-6 text-white shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
-            {/* Subtle background pattern */}
+
+          {/* AI Referral Card */}
+          <div className="group relative bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 rounded-2xl p-5 text-white shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-full -translate-y-12 translate-x-12"></div>
-            <div className=" text-center relative z-10">
+            <div className="text-center relative z-10">
               <div className="text-3xl md:text-4xl font-black mb-2 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">+1,877%</div>
               <div className="text-sm font-semibold text-blue-50 leading-tight">AI Referral Traffic<br/><span className="text-xs opacity-80">(Q1-Q2 2025)</span></div>
             </div>
           </div>
 
-          {/* Gemini Traffic Card */}
-          <div className="group relative bg-gradient-to-br from-teal-500 via-teal-600 to-emerald-600 rounded-3xl p-6 text-white shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
-            {/* Subtle background pattern */}
+          {/* Gemini Card */}
+          <div className="group relative bg-gradient-to-br from-teal-500 via-teal-600 to-emerald-600 rounded-2xl p-4 text-white shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-full -translate-y-12 translate-x-12"></div>
             <div className="text-center relative z-10">
@@ -74,9 +85,8 @@ const AiSection = () => {
             </div>
           </div>
 
-          {/* Perplexity Traffic Card */}
-          <div className="group relative bg-gradient-to-br from-teal-500 via-teal-600 to-emerald-600 rounded-3xl p-6 text-white shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
-            {/* Subtle background pattern */}
+          {/* Perplexity  Card */}
+          <div className="group relative bg-gradient-to-br from-teal-500 via-teal-600 to-emerald-600 rounded-2xl p-4 text-white shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-full -translate-y-12 translate-x-12"></div>
             <div className="text-center relative z-10">
@@ -85,9 +95,8 @@ const AiSection = () => {
             </div>
           </div>
 
-          {/* ChatGPT Search Traffic Card */}
-          <div className="group relative bg-gradient-to-br from-emerald-500 via-green-600 to-green-700 rounded-3xl p-6 text-white shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
-            {/* Subtle background pattern */}
+          {/* ChatGPT Traffic  */}
+          <div className="group relative bg-gradient-to-br from-emerald-500 via-green-600 to-green-700 rounded-2xl p-4 text-white shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-full -translate-y-12 translate-x-12"></div>
             <div className="text-center relative z-10">
@@ -97,9 +106,8 @@ const AiSection = () => {
           </div>
         </div>
 
-        {/* Content Section */}
+        {/* Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          {/* Left Column - Text Content */}
           <div className="space-y-6">
             <p className="text-lg sm:text-lg lg:text-xl text-gray-700 leading-relaxed">
               Rapid advances in generative artificial intelligence (AI) models have reshaped 
@@ -110,17 +118,17 @@ const AiSection = () => {
             </p>
             
             <p className="text-lg sm:text-lg lg:text-xl text-gray-700 leading-relaxed">
-              Virtual Orbit is one of the{' '}
-              <span className="text-green-600 font-semibold underline decoration-green-200 decoration-2">
-                top generative engine optimization companies
-              </span>{' '}
-              for AI visibility. Using our internal research and development (R&D) department, 
-              we've been testing and perfecting AI SEO strategies for large language 
-              models (LLMs) while other agencies experiment with your budget.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, tenetur.
             </p>
+            <div className="mt-4 pb-4 flex justify-center sm:justify-start">
+              <div className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
+                <span className="mr-3">Get a Free Consultation</span>
+                <TrendingUp className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+              </div>
+            </div>
           </div>
 
-          {/* Right Column - AI Mode Visibility Card */}
+          {/* Right Column */}
           <div className="space-y-8">
             {/* Icons Row */}
             <div className="flex justify-center space-x-4">

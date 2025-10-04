@@ -1,7 +1,7 @@
 import React from "react";
-import CircleBG from "../../assets/Difference.png"
+import TipsBG from "../../assets/top-to-bottom.png"
 
-const DmTips = () => {
+const GoogleAdsTips = () => {
   
   const benefitsLeft = [
     'Stronger local community outreach',
@@ -25,28 +25,28 @@ const DmTips = () => {
 
   return (
   <section 
-    className="max-w-full py-8 bg-cover bg-center xl:pt-3" 
-    style={{ backgroundImage: `url(${CircleBG})` }}
+    className="max-w-full py-16 bg-cover bg-center" 
+    style={{ backgroundImage: `url(${TipsBG})` }}
   >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:pb-40"> 
-        {/* Header */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> 
+        {/* Section Header */}
         <div className="md:text-center md:mb-12">
-          <h2 className="text-3xl font-montserrat md:text-5xl text-start sm:text-center text-gray-200 mb-2">
-            Some Tips Regarding <span className='bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent'>Filler Services</span>  
+          <h2 className="text-3xl font-montserrat md:text-5xl text-gray-800 mb-2">
+            How To Optimize Your <span className='bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent'>Google Ads Account</span>  
           </h2>
-          <p className="text-gray-400 text-lg text-start sm:text-center font-semibold">
+          <p className="text-gray-400 text-lg font-semibold">
             Create a Lasting Impression Across Search Engines and Your Prospects
           </p>
         </div>
 
-        {/* Box */}
+        {/* Benefits Box */}
         <div className="mt-8 bg-[#0f3064] rounded-lg p-8 relative overflow-hidden shadow-[0_0_25px_rgba(59,130,246,0.5),0_0_50px_rgba(59,130,246,0.3)]">
           <h3 className="font-bold text-lg text-center md:text-xl text-white mb-8 leading-relaxed">
             With 78% of local mobile searches resulting in offline purchases, local SEO isn't just an option—it's essential. Transform your business with these proven local SEO advantages
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 mx-auto relative z-10">
-            {/* Left */}
+            {/* Left Column */}
             <div className="space-y-4">
               {benefitsLeft.map((item, index) => (
                 <div key={index} className="flex items-start gap-3">
@@ -65,7 +65,7 @@ const DmTips = () => {
               ))}
             </div>
 
-            {/* Right */}
+            {/* Right Column */}
             <div className="space-y-4">
               {benefitsRight.map((item, index) => (
                 <div key={index} className="flex items-start gap-3">
@@ -111,4 +111,4 @@ const DmTips = () => {
   );
 };
 
-export default DmTips;
+export default GoogleAdsTips;

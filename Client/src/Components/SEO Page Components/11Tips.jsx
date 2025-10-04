@@ -25,7 +25,7 @@ const DmTips = () => {
 
   return (
   <section 
-    className="max-w-full  lg:pt-10 bg-cover bg-center xl:pt-25" 
+    className="max-w-full lg:pt-7 bg-cover bg-center xl:pt-" 
     style={{ backgroundImage: `url(${TipsBG})` }}
   >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> 
@@ -85,7 +85,6 @@ const DmTips = () => {
             </div>
           </div>
 
-          {/* Call to Action */}
           <p className="text-white text-base leading-relaxed relative z-10">
             Ready to chat about how our local SEO services can grow your business?{' '}
             <a href="#contact" className="text-blue-400 underline font-medium hover:text-blue-500 transition-colors">
@@ -94,7 +93,7 @@ const DmTips = () => {
             to us and let's talk about which local SEO packages fit your online needs.
           </p>
 
-          {/* Large Checkmark Background */}
+          {/* Checkmark */}
           <div className="absolute -right-8 -top-8 md:-top-16 opacity-10"> 
             <svg
               className="w-32 h-32 md:w-48 md:h-48 text-white"

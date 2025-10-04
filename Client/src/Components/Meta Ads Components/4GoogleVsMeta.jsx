@@ -15,7 +15,7 @@ const DigitalVsTraditionalMarketing = () => {
       <div className="max-w-6xl mx-auto px-6 pb-30">
         <div className=" mb-5">
           <h3 className="text-3xl font-montserrat md:text-5xl text-center font- text-white mb-6">
-            DIY Vs <span className="font-['Playfair_Display',serif] italic bg-gradient-to-r from-pink-500 via-orange-400 to-pink-400 bg-clip-text text-transparent">Hiring a SEO Agency</span>
+            What's Good For You: <span className="font-['Playfair_Display',serif] italic bg-gradient-to-r from-pink-500 via-orange-400 to-pink-400 bg-clip-text text-transparent">Google Ads Or Meta Ads</span>
           </h3>
           
           <p className="text-lg text-center text-white ">
@@ -28,7 +28,7 @@ const DigitalVsTraditionalMarketing = () => {
           <div className="bg-gray-100 border-1 border-blue-800 rounded-lg overflow-hidden">
             <div className="bg-gray-600 text-white px-6 py-4">
               <h3 className="text-xl font-bold text-center">
-                Doing It Yourself
+                Traditional Marketing (OFFLINE)
               </h3>
             </div>
             
@@ -72,7 +72,7 @@ const DigitalVsTraditionalMarketing = () => {
           <div className="bg-blue-50 rounded-lg overflow-hidden">
             <div className="bg-blue-600 text-white px-6 py-4">
               <h3 className="text-xl font-bold text-center">
-                Hiring a SEO Agency
+                Digital Marketing (ONLINE)
               </h3>
             </div>
             

@@ -17,7 +17,6 @@ export default function SmoothScrollHero() {
 const Hero = () => {
   const ref = useRef(null);
 
-  // Scope scroll progress to this section so visibility isn't tied to global page scroll
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
@@ -36,12 +35,10 @@ const Hero = () => {
 };
 
 const CenterImage = ({ progress }) => {
-  // Use section-local progress for clip/opacity
   const clip1 = useTransform(progress, [0, 1], [25, 0]);
   const clip2 = useTransform(progress, [0, 1], [75, 100]);
   const clipPath = useMotionTemplate`polygon(${clip1}% ${clip1}%, ${clip2}% ${clip1}%, ${clip2}% ${clip2}%, ${clip1}% ${clip2}%)`;
 
-  // Keep visible through most of section and fade near end
   const opacity = useTransform(progress, [0, 0.75, 1], [1, 1, 0]);
 
   return (
@@ -66,7 +63,6 @@ const CenterImage = ({ progress }) => {
 };
 
 const ParallaxImages = () => (
-  // Higher z-index so images sit above the sticky text
   <div className="relative z-20 mx-auto max-w-5xl px-4 pt-[200px]">
     <ParallaxImg
       src={Gscc}

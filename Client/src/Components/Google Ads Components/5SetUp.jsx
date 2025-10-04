@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Services = () => {
+const GoogleAdsSetUp = () => {
   const services = [
     {
       number: '01',
@@ -64,14 +64,13 @@ const Services = () => {
     }
   ];
 
-  // render descriptions with links
   const DescriptionWithLinks = ({ description }) => {
     if (typeof description === 'string') {
-      return <p className="text-gray-200 leading-relaxed text-sm md:text-base">{description}</p>;
+      return <p className="text-gray-900 leading-relaxed text-sm md:text-base">{description}</p>;
     }
 
     return (
-      <p className="text-gray-200 leading-relaxed text-sm md:text-base">
+      <p className="text-gray-900 leading-relaxed text-sm md:text-base">
         {description.map((item, index) => {
           if (typeof item === 'string') {
             return <span key={index}>{item}</span>;
@@ -95,33 +94,31 @@ const Services = () => {
   };
 
   return (
-    <section className="bg-gradient-to-b from-[#0f3064] via-[#2563eb] to-[#0f3064] max-w-full">
+    <section className="bg-white max-w-full">
       <div className='max-w-7xl mx-auto px-6 py-12'>
-        {/* Header Section */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-montserrat md:text-5xl text-white mb-3">
-            Virtual Orbit's <span className='bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent'> SEO Services</span>
+          <h2 className="text-3xl font-montserrat md:text-5xl text-gray-900 mb-3">
+            How To Set Up Your <span className='bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent'>Google Ads Account</span>
           </h2>
-          <p className="text-lg text-blue-200 mb-8">
+          <p className="text-lg text-blue-600 mb-8">
             Laying the Groundwork for Long-Term Organic Success
           </p>
         </div>
 
-        {/* Services Grid */}
+        {/* Services Map */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-10">
           {services.map(({ number, title, description }) => (
             <div key={number} className="relative bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-              {/* Large Number */}
+            
+              {/*  Number */}
               <div className="text-6xl md:text-7xl font-bold text-gray-400 mb-4">
                 {number}
               </div>
               
-              {/* Service Title */}
-              <h3 className="text-xl md:text-2xl font-semibold text-white mb-4 -mt-2">
+              {/* Title */}
+              <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-4 -mt-2">
                 {title}
               </h3>
-              
-              {/* Service Description with Links */}
               <DescriptionWithLinks description={description} />
             </div>
           ))}
@@ -131,4 +128,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default GoogleAdsSetUp;
