@@ -124,14 +124,14 @@ const StickyStackingCards = () => {
   ];
 
   return (
-    <div className="bg-gray-50 lg:bg-gradient-to-b from-[#0f3064] via-[#2563eb] to-[#0f3064] lg:mb-15">
+    <div className="bg-gray-50 lg:mb-15">
       {/* Heading */}
       <div className="pt-12 md:pt-16 lg:pt-20 pb-6 md:pb-8 lg:pb-10">
         <div className="max-w-6xl mx-auto px-4 pb-10 sm:pb-0 md:px-6">
-            <h3 className="text-4xl md:text-5xl lg:text-5xl text-center sm:text-center font-montserrat md:text-5xl text-gray-700  lg:text-gray-200 mb-5">
+            <h3 className="text-4xl md:text-5xl lg:text-5xl text-center sm:text-center font-montserrat md:text-5xl text-gray-700   mb-5">
               Virtual Orbit's <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-['Playfair_Display',serif] italic">Digital Marketing Services</span>
             </h3>
-          <p className="text-base md:text-lg lg:text-xl text-center text-blue-600 lg:text-gray-200 max-w-3xl mx-auto px-4">
+          <p className="text-base md:text-lg lg:text-xl text-center text-blue-600  max-w-3xl mx-auto px-4">
             Comprehensive solutions to grow your online presence and drive measurable results
           </p>
         </div>
