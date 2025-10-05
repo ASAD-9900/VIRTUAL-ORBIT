@@ -1,141 +1,119 @@
-import React, { useRef, useState, useEffect } from 'react';
-import { Search, BarChart3, Target, TrendingUp, FileText, Zap } from 'lucide-react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import React from 'react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 
-const Process = () => {
-  const ref = useRef(null);
-  const [isLargeScreen, setIsLargeScreen] = useState(true);
-  
-  useEffect(() => {
-    const checkScreen = () => {
-      setIsLargeScreen(window.innerWidth >= 1024);
-    };
-    
-    checkScreen();
-    window.addEventListener('resize', checkScreen);
-    return () => window.removeEventListener('resize', checkScreen);
-  }, []);
-  
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"]
-  });
-
+const HowItWorks = () => {
   const steps = [
     {
-      number: '01',
-      title: 'Website Audit & Analysis',
-      description: 'Comprehensive analysis of your website\'s current SEO performance and competitive landscape to identify opportunities for growth and improvement.Comprehensive analysis of your website\'s current SEO performance and competitive landscape to identify opportunities for growth and improvement',
+      number: "01",
+      title: "Keyword Research",
+      description: "We identify high-impact keywords tailored to your target audience, industry, and goals."
     },
     {
-      number: '02',
-      title: 'Strategy Development',
-      description: 'Custom SEO strategy tailored to your business goals and target audience with clear objectives and measurable KPIs for success.Comprehensive analysis of your website\'s current SEO performance and competitive landscape to identify opportunities for growth and improvement',
+      number: "02",
+      title: "Content Optimization",
+      description: "We identify high-impact keywords tailored to your target audience, industry, and goals."
     },
     {
-      number: '03',
-      title: 'Content Optimization',
-      description: 'Creating and optimizing content that ranks well and engages your audience while meeting search intent and driving conversions.Comprehensive analysis of your website\'s current SEO performance and competitive landscape to identify opportunities for growth and improvement',
+      number: "03",
+      title: "Technical SEO Tools",
+      description: "We identify high-impact keywords tailored to your target audience, industry, and goals."
     },
     {
-      number: '04',
-      title: 'Technical Implementation',
-      description: 'Technical SEO improvements including site speed optimization, mobile responsiveness, and proper site structure for better crawling.Comprehensive analysis of your website\'s current SEO performance and competitive landscape to identify opportunities for growth and improvement',
-    },
-    {
-      number: '05',
-      title: 'Performance Monitoring',
-      description: 'Continuous tracking and optimization based on data-driven insights to ensure sustained growth and improvement over time.Comprehensive analysis of your website\'s current SEO performance and competitive landscape to identify opportunities for growth and improvement',
-    },
+      number: "04",
+      title: "Performance Tracking",
+      description: "We identify high-impact keywords tailored to your target audience, industry, and goals."
+    }
   ];
 
-  const getStepAnimation = (index) => {
-    const isEven = index % 2 === 0;
-    const startProgress = index * 0.15;
-    const endProgress = startProgress + 0.2;
-    
-    return {
-      x: useTransform(
-        scrollYProgress,
-        [startProgress, endProgress],
-        isLargeScreen ? [isEven ? -150 : 150, 0] : [0, 0]
-      ),
-      opacity: useTransform(
-        scrollYProgress,
-        [startProgress, endProgress],
-        [0, 1]
-      )
-    };
-  };
-
   return (
-    <section ref={ref} className="md:py-12 lg:py-5 bg-white">
-      <div className="container mx-auto px-4 md:px-6 max-w-6xl">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="mb-8 md:mb-10"
-        >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-center text-gray-900 mb-3 md:mb-5 px-2">
-            Our Approach Towards SEO
-          </h2>
-          <p className="text-sm sm:text-base md:text-lg text-center text-blue-600 font-medium px-4">
-            A strategic, data-driven process to elevate your online presence
+    <section className="bg-gradient-to-b from-blue-50 via-white to-blue-50 py-12 sm:py-16 lg:py-24 px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto">
+        {/* Header with Icon */}
+        <div className="flex items-center gap-2 mb-3 sm:mb-4">
+          <div className="w-5 h-5 sm:w-6 sm:h-6 bg-blue-500 rounded-full flex items-center justify-center">
+            <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-white" />
+          </div>
+          <p className="text-blue-600 text-xs sm:text-sm font-bold uppercase tracking-wider">
+            HOW IT WORKS
           </p>
-        </motion.div>
+        </div>
 
-        {/* Steps List */}
-        <div className="space-y-0">
-          {steps.map((step, index) => {
-            const animation = getStepAnimation(index);
-            
-            return (
-              <motion.div
-                key={index}
-                style={{ 
-                  x: animation.x, 
-                  opacity: animation.opacity 
-                }}
-              >
-                <div className="flex flex-col md:grid md:grid-cols-12 gap-3 sm:gap-4 md:gap-6 lg:gap-12 items-center md:items-start py-6 sm:py-8 md:py-12 lg:py-16">
-                  {/* Number Circle Background */}
-                  <div className="md:col-span-1 flex justify-center w-full md:w-auto">
-                    <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-                      <span className="text-xl sm:text-2xl md:text-xl lg:text-xl font-bold text-blue-600">
-                        {step.number}
-                      </span>
+        {/* Main Title and Description */}
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-16 mb-12 sm:mb-16 lg:mb-20">
+          <div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              Step by Step <span className="text-blue-600">guide</span> to SEO success
+            </h2>
+          </div>
+          <div className="flex items-center">
+            <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed">
+              Our process simplifies SEO into clear, actionable steps keyword research and content optimization to link building and performance tracking, we ensure your website achieves sustainable.
+            </p>
+          </div>
+        </div>
+
+        {/* Timeline Steps */}
+        <div className="relative">
+          {/* Horizontal Line - Desktop Only */}
+          <div className="hidden lg:block absolute top-6 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200"></div>
+
+          {/* Vertical Line - Mobile/Tablet */}
+          <div className="lg:hidden absolute left-5 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-200 via-blue-400 to-blue-200"></div>
+
+          {/* Steps Grid */}
+          <div className="grid gap-8 sm:gap-10 lg:grid-cols-4 lg:gap-6">
+            {steps.map((step, index) => (
+              <div key={index} className="relative pl-12 lg:pl-0">
+                {/* Circle Indicator */}
+                <div className="absolute left-0 top-0 lg:relative flex items-start gap-4 lg:flex-col lg:items-start mb-4 sm:mb-6">
+                  <div className="relative flex-shrink-0">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-12 lg:h-12 rounded-full bg-blue-500 flex items-center justify-center relative z-10 shadow-lg">
+                      <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-white"></div>
                     </div>
                   </div>
-
-                  {/* Title */}
-                  <div className="md:col-span-3 text-center md:text-left w-full">
-                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 px-4 md:px-0">
-                      {step.title}
-                    </h3>
-                  </div>
-
-                  {/* Description */}
-                  <div className="md:col-span-8 text-center md:text-left w-full">
-                    <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg px-4 md:px-0">
-                      {step.description}
-                    </p>
+                  
+                  {/* Large Number */}
+                  <div className="hidden lg:block lg:mt-4">
+                    <span 
+                      className="text-6xl sm:text-7xl lg:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-blue-400 to-blue-600" 
+                      style={{
+                        WebkitTextStroke: '2px rgba(59, 130, 246, 0.2)'
+                      }}
+                    >
+                      {step.number}
+                    </span>
                   </div>
                 </div>
 
-                {/* Border */}
-                {index < steps.length - 1 && (
-                  <div className="border-b border-gray-200 mx-4 md:mx-0"></div>
-                )}
-              </motion.div>
-            );
-          })}
+                {/* Content */}
+                <div className="space-y-2 sm:space-y-3">
+                  {/* Mobile Number */}
+                  <span className="lg:hidden text-4xl sm:text-5xl font-bold text-blue-500 block mb-2">
+                    {step.number}
+                  </span>
+                  
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900">
+                    {step.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* CTA Button */}
+        <div className="mt-10 sm:mt-14 lg:mt-16 flex justify-center">
+          <button className="group inline-flex items-center gap-2 sm:gap-3 px-6 py-3 sm:px-8 sm:py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm sm:text-base lg:text-lg rounded-full transition-all duration-300 shadow-lg hover:shadow-blue-600/50 transform hover:-translate-y-1">
+            <span>Start Your SEO Journey</span>
+            <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300" />
+          </button>
         </div>
       </div>
     </section>
   );
 };
 
-export default Process;
+export default HowItWorks;

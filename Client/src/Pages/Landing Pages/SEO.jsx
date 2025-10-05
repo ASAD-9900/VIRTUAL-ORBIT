@@ -6,6 +6,7 @@ import HeroSection from "../../Components/SEO Page Components/HeroSection"
 import AiSEO from "../../Components/SEO Page Components/1AiSEO"
 import GrowWithSEO from "../../Components/SEO Page Components/2GrowWithSEO";
 import SeoNeed from "../../Components/SEO Page Components/3SeoNeed";
+import Banner from "../../Components/SEO Page Components/Banner"
 import WeGiveResults from "../../Components/SEO Page Components/4WeGiveResults"
 import Service from "../../Components/SEO Page Components/5Service"
 import SeoForYourBusiness from "../../Components/SEO Page Components/6SeoForYourBusiness"
@@ -49,10 +50,11 @@ const SEO = () => {
     <div>
       <HeroSection></HeroSection>
       <AiSEO/>
+      <WeGiveResults/>
       <GrowWithSEO/>
       <SeoNeed/>
+      <Banner/>
       {/* <FillerSix/> */}
-      <WeGiveResults/>
       <Service/>
       <SeoForYourBusiness/>
       <DiyVsHiringAgency/>
