@@ -56,7 +56,7 @@ const SEO = () => {
       <Service/>
       <SeoForYourBusiness/>
       <DiyVsHiringAgency/>
-      <div className="lg:mt-18 mb-18 bg-white">
+      <div className="mt-9 mb-9 lg:mt-18 lg:mb-18 bg-white">
              <Marqee
               texts={[<span className="text-[#4e38f5]">Virtual Orbit -</span>, "- Local SEO - Ecommerce - AI SEO - Technical SEO - SEO Audits"]}
               velocity={50}

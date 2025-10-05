@@ -25,27 +25,27 @@ const Process = () => {
     {
       number: '01',
       title: 'Website Audit & Analysis',
-      description: 'Comprehensive analysis of your website\'s current SEO performance and competitive landscape to identify opportunities for growth and improvement.',
+      description: 'Comprehensive analysis of your website\'s current SEO performance and competitive landscape to identify opportunities for growth and improvement.Comprehensive analysis of your website\'s current SEO performance and competitive landscape to identify opportunities for growth and improvement',
     },
     {
       number: '02',
       title: 'Strategy Development',
-      description: 'Custom SEO strategy tailored to your business goals and target audience with clear objectives and measurable KPIs for success.',
+      description: 'Custom SEO strategy tailored to your business goals and target audience with clear objectives and measurable KPIs for success.Comprehensive analysis of your website\'s current SEO performance and competitive landscape to identify opportunities for growth and improvement',
     },
     {
       number: '03',
       title: 'Content Optimization',
-      description: 'Creating and optimizing content that ranks well and engages your audience while meeting search intent and driving conversions.',
+      description: 'Creating and optimizing content that ranks well and engages your audience while meeting search intent and driving conversions.Comprehensive analysis of your website\'s current SEO performance and competitive landscape to identify opportunities for growth and improvement',
     },
     {
       number: '04',
       title: 'Technical Implementation',
-      description: 'Technical SEO improvements including site speed optimization, mobile responsiveness, and proper site structure for better crawling.',
+      description: 'Technical SEO improvements including site speed optimization, mobile responsiveness, and proper site structure for better crawling.Comprehensive analysis of your website\'s current SEO performance and competitive landscape to identify opportunities for growth and improvement',
     },
     {
       number: '05',
       title: 'Performance Monitoring',
-      description: 'Continuous tracking and optimization based on data-driven insights to ensure sustained growth and improvement over time.',
+      description: 'Continuous tracking and optimization based on data-driven insights to ensure sustained growth and improvement over time.Comprehensive analysis of your website\'s current SEO performance and competitive landscape to identify opportunities for growth and improvement',
     },
   ];
 
@@ -69,7 +69,7 @@ const Process = () => {
   };
 
   return (
-    <section ref={ref} className="py-8 md:py-12 lg:py-5 bg-white">
+    <section ref={ref} className="md:py-12 lg:py-5 bg-white">
       <div className="container mx-auto px-4 md:px-6 max-w-6xl">
         {/* Header */}
         <motion.div
