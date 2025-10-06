@@ -25,7 +25,7 @@ function Pitch() {
       }}
     >
       <motion.div 
-        className="max-w-7xl mx-auto md:pt-60"
+        className="max-w-7xl mx-auto md:pt-60 xl:pt-100"
         style={{
           translateY: translateY,
           opacity: opacity

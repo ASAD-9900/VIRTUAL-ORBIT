@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight, Sparkles, TrendingUp } from 'lucide-react';
 
 const HowItWorks = () => {
   const steps = [
@@ -104,12 +104,12 @@ const HowItWorks = () => {
           </div>
         </div>
 
-        {/* CTA Button */}
-        <div className="mt-10 sm:mt-14 lg:mt-16 flex justify-center">
-          <button className="group inline-flex items-center gap-2 sm:gap-3 px-6 py-3 sm:px-8 sm:py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm sm:text-base lg:text-lg rounded-full transition-all duration-300 shadow-lg hover:shadow-blue-600/50 transform hover:-translate-y-1">
-            <span>Start Your SEO Journey</span>
-            <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300" />
-          </button>
+      {/* button */}
+        <div className="pt-4 sm:pt-6 lg:pt-10 pb-4 flex justify-center ">
+            <div className="inline-flex items-center px-5 py-2.5 sm:px-6 sm:py-3 lg:px-8 lg:py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-xs sm:text-sm lg:text-base font-semibold rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
+              <span className="mr-2 sm:mr-3">Ready to Get Started?</span>
+              <TrendingUp className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 group-hover:translate-x-1 transition-transform duration-300" />
+            </div>
         </div>
       </div>
     </section>
