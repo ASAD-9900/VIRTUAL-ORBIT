@@ -8,7 +8,8 @@ import GrowWithSEO from "../../Components/SEO Page Components/2GrowWithSEO";
 import SeoNeed from "../../Components/SEO Page Components/3SeoNeed";
 import Banner from "../../Components/SEO Page Components/Banner"
 import WeGiveResults from "../../Components/SEO Page Components/4WeGiveResults"
-import Service from "../../Components/SEO Page Components/5Service"
+import Services from "../../Components/SEO Page Components/5Services"
+import Filler from "../../Components/SEO Page Components/Filler"
 import SeoForYourBusiness from "../../Components/SEO Page Components/6SeoForYourBusiness"
 import DiyVsHiringAgency from "../../Components/SEO Page Components/7DiyVsAgency"
 import Marqee from "../../Components/Global Components/Marqee"
@@ -55,7 +56,8 @@ const SEO = () => {
       <SeoNeed/>
       <Banner/>
       {/* <FillerSix/> */}
-      <Service/>
+      <Services/>
+      <Filler/>
       <SeoForYourBusiness/>
       <DiyVsHiringAgency/>
       <div className="mt-9 mb-9 lg:mt-18 lg:mb-18 bg-white">

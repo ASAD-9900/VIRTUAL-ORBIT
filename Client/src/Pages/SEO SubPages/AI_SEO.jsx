@@ -46,7 +46,7 @@ const AI_SEO = () => {
         <Need/>
         <Services/>
         <ChooseAgency/>
-        <div className='bg-cover bg-center bg-no-repeat'
+        <div className='bg-contain bg-center bg-no-repeat'
         style={{ backgroundImage: `url(${CornerBG})` }}>
         <Time/>
         <Worth/>

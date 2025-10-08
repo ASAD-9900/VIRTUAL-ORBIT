@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Eye, Search, RotateCcw, Rocket, TrendingUp } from 'lucide-react';
+import Gemini from "../../assets/gemini-logo.png"
+import ChatGPT from "../../assets/chat-gpt-logo.png"
+import Perplexity from "../../assets/perplexity-logo.png"
 
 const AiSection = () => {
   const [activeTab, setActiveTab] = useState('visibility');
@@ -62,61 +65,113 @@ const AiSection = () => {
           </p>
         </div>
 
-        {/* Card DIv */}
+        {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
-
           {/* AI Referral Card */}
-          <div className="group relative bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 rounded-2xl p-5 text-white shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div className="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-full -translate-y-12 translate-x-12"></div>
-            <div className="text-center relative z-10">
-              <div className="text-3xl md:text-4xl font-black mb-2 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">+1,877%</div>
-              <div className="text-sm font-semibold text-blue-50 leading-tight">AI Referral Traffic<br/><span className="text-xs opacity-80">(Q1-Q2 2025)</span></div>
+          <div
+            className="group relative rounded-[2rem] p-5 text-gray-700 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden border border-pink-600"
+          >
+            <div className="absolute inset-0 flex justify-center items-center pointer-events-none z-0 pb-5">
+              <span className="text-[8rem] font-extrabold text-gray-400 select-none leading-none opacity-20">
+                AI
+              </span>
+            </div>
+            <div className="relative z-10 text-center">
+              <div className="text-3xl md:text-4xl font-extrabold mb-2">
+                <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent">
+                  +876%
+                </span>
+              </div>
+              <div className="text-sm font-semibold text-gray-600 leading-tight">
+                AI Referral Traffic<br /><span className="text-xs opacity-80">(Q1-Q2 2025)</span>
+              </div>
+            </div>
+          </div>
+
+          {/* ChatGPT Card */}
+          <div
+            className="group relative rounded-[2rem] p-4 text-gray-700 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden border border-[#70a597]"
+          >
+            <div className="absolute inset-0 flex justify-center items-center pointer-events-none z-0">
+              <img
+                src={ChatGPT}
+                alt="ChatGPT bg"
+                className="w-[100%] h-[100%] object-contain grayscale opacity-10"
+                style={{filter: 'grayscale(1800%)'}}
+              />
+            </div>
+            <div className="relative z-10 text-center">
+              <div className="text-3xl md:text-4xl font-extrabold mb-2">
+                <span className="bg-gradient-to-r from-[#70a597] to-[#70a597] bg-clip-text text-transparent">
+                  +108%
+                </span>
+              </div>
+              <div className="text-sm font-semibold text-gray-600 leading-tight">
+                ChatGPT Search Traffic<br /><span className="text-xs opacity-80">(Q1-Q2 2025)</span>
+              </div>
             </div>
           </div>
 
           {/* Gemini Card */}
-          <div className="group relative bg-gradient-to-br from-teal-500 via-teal-600 to-emerald-600 rounded-2xl p-4 text-white shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div className="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-full -translate-y-12 translate-x-12"></div>
-            <div className="text-center relative z-10">
-              <div className="text-3xl md:text-4xl font-black mb-2 bg-gradient-to-r from-white to-teal-100 bg-clip-text text-transparent">+117%</div>
-              <div className="text-sm font-semibold text-teal-50 leading-tight">Gemini Traffic<br/><span className="text-xs opacity-80">(Q1-Q2 2025)</span></div>
+          <div
+            className="group relative rounded-[2rem] p-4 text-gray-700 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden border border-[#4281f4]"
+          >
+            <div className="absolute inset-0 flex justify-center items-center pointer-events-none z-0">
+              <img
+                src={Gemini}
+                alt="Gemini bg"
+                className="w-[120%] h-[120%] object-contain  opacity-25"
+                style={{filter: 'grayscale(100%)'}}
+              />
+            </div>
+            <div className="relative z-10 text-center">
+              <div className="text-3xl md:text-4xl font-extrabold mb-2">
+                <span className="bg-gradient-to-r from-[#4281f4] to-[#4281f4] bg-clip-text text-transparent">
+                  +102%
+                </span>
+              </div>
+              <div className="text-sm font-semibold text-gray-600 leading-tight">
+                Gemini Traffic<br /><span className="text-xs opacity-80">(Q1-Q2 2025)</span>
+              </div>
             </div>
           </div>
 
-          {/* Perplexity  Card */}
-          <div className="group relative bg-gradient-to-br from-teal-500 via-teal-600 to-emerald-600 rounded-2xl p-4 text-white shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div className="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-full -translate-y-12 translate-x-12"></div>
-            <div className="text-center relative z-10">
-              <div className="text-3xl md:text-4xl font-black mb-2 bg-gradient-to-r from-white to-teal-100 bg-clip-text text-transparent">+101%</div>
-              <div className="text-sm font-semibold text-teal-50 leading-tight">Perplexity Traffic<br/><span className="text-xs opacity-80">(Q1-Q2 2025)</span></div>
+          {/* Perplexity Card */}
+          <div
+            className="group relative rounded-[2rem] p-4 text-gray-700 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden border border-[#21b2c7]"
+          >
+            <div className="absolute inset-0 flex justify-center items-center pointer-events-none z-0">
+              <img
+                src={Perplexity}
+                alt="Perplexity bg"
+                className="w-[100%] h-[100%] object-contain  opacity-25"
+                style={{filter: 'grayscale(100%)'}}
+              />
             </div>
-          </div>
-
-          {/* ChatGPT Traffic  */}
-          <div className="group relative bg-gradient-to-br from-emerald-500 via-green-600 to-green-700 rounded-2xl p-4 text-white shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div className="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-full -translate-y-12 translate-x-12"></div>
-            <div className="text-center relative z-10">
-              <div className="text-3xl md:text-4xl font-black mb-2 bg-gradient-to-r from-white to-green-100 bg-clip-text text-transparent">+119%</div>
-              <div className="text-sm font-semibold text-green-50 leading-tight">ChatGPT Search Traffic<br/><span className="text-xs opacity-80">(Q1-Q2 2025)</span></div>
+            <div className="relative z-10 text-center">
+              <div className="text-3xl md:text-4xl font-extrabold mb-2">
+                <span className="bg-gradient-to-r from-[#21b2c7] to-[#21b2c7] bg-clip-text text-transparent">
+                  +101%
+                </span>
+              </div>
+              <div className="text-sm font-semibold text-gray-600 leading-tight">
+                Perplexity Traffic<br /><span className="text-xs opacity-80">(Q1-Q2 2025)</span>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Content */}
+
+        {/* left to the cards  */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
             <p className="text-lg sm:text-lg lg:text-xl text-gray-700 leading-relaxed">
-              Rapid advances in generative artificial intelligence (AI) models have reshaped 
-              how content is discovered and consumed. Traditional search engine 
-              optimization (SEO) is no longer enough to reach those looking for your 
-              products or services. To stay visible online amid shifting algorithms, you need 
+              Rapid advances in generative artificial intelligence (AI) models have reshaped
+              how content is discovered and consumed. Traditional search engine
+              optimization (SEO) is no longer enough to reach those looking for your
+              products or services. To stay visible online amid shifting algorithms, you need
               to optimize for AI-first discovery.
             </p>
-            
             <p className="text-lg sm:text-lg lg:text-xl text-gray-700 leading-relaxed">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, tenetur.
             </p>
@@ -128,7 +183,7 @@ const AiSection = () => {
             </div>
           </div>
 
-          {/* Right Column */}
+          {/* changing cards */}
           <div className="space-y-8">
             {/* Icons Row */}
             <div className="flex justify-center space-x-4">
@@ -174,7 +229,7 @@ const AiSection = () => {
               </button>
             </div>
 
-            {/* Dynamic Content Card */}
+
             <div className="relative bg-white rounded-2xl p-8 shadow-lg min-h-[280px]">
               {/* Gradient Border */}
               <div className="absolute inset-0 bg-gradient-to-r from-orange-400 via-pink-400 via-blue-500 to-green-500 rounded-2xl p-[3px]">
@@ -213,7 +268,6 @@ style.textContent = `
       transform: translateY(0);
     }
   }
-  
   .animate-fade-in {
     animation: fade-in 0.5s ease-out forwards;
   }
