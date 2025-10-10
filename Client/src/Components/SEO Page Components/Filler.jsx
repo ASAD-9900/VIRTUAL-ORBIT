@@ -88,7 +88,7 @@ const ServicesAccordion = () => {
               SERVICES .
             </p>
             <h2 className="text-gray-900 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold uppercase leading-tight">
-              MAKE YOUR SMM<br />EXCEPTIONAL
+              VIRTUAL ORBIT'S<br />SEO SERVICES
             </h2>
           </div>
       {/* button */}

@@ -56,7 +56,7 @@ const WhatsSEO = () => {
             className="w-full lg:w-2/3 space-y-4 sm:space-y-6"
           >
             <div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center lg:text-start font-bold font-montserrat text-gray-700 mb-3 sm:mb-4 lg:mb-5">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center lg:text-start font-montserrat text-gray-700 mb-3 sm:mb-4 lg:mb-5">
                 Grow Your Business With <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-['Playfair_Display',serif] italic">SEO Services</span> 
               </h2>
               <p className="text-sm sm:text-base lg:text-lg text-center lg:text-start text-blue-600 font-medium">
