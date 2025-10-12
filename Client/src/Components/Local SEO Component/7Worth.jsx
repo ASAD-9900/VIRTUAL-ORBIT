@@ -14,7 +14,7 @@ function AIVisibilitySection() {
           {/* Content */}
           <div className="space-y-6 lg:pb-25">
             <h2 className="text-3xl sm:text-4xl font-montserrat lg:text-5xl text-gray-900 leading-tight">
-              Should You Invest In <span className='bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent'>Local SEO Services?</span>
+              Should You Invest In <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-['Playfair_Display',serif] italic">Local SEO Services?</span>
             </h2>
             
             <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 leading-relaxed">

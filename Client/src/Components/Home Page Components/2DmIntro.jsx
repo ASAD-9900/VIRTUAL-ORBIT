@@ -7,7 +7,7 @@ const DigitalMarketingIntro = () => {
   return (
 
         <section 
-        className="max-w-full bg-blue-200 bg-cover bg-center bg-no-repeat" 
+        className="max-w-full bg-cover bg-center bg-no-repeat" 
         style={{
         backgroundImage: `url(${GraphBG})`
         }}

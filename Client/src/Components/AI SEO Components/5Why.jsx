@@ -52,7 +52,7 @@ const DigitalMarketingBenefits = () => {
 
   return (
     <section className="max-w-full bg-gradient-to-b from-[#0f3064] via-[#2563eb] to-[#0f3064]" >
-      <div className="max-w-7xl mx-auto px-6 py-6  space-y-16">
+      <div className="max-w-7xl mx-auto px-6 py-6 lg:pb-18 space-y-16">
         <div className='mb-6'>
             <h2 className="text-4xl font-montserrat md:text-5xl lg:text-5xl text-center  text-white mt-8 mb-8 md:mb-15">
               How To Do {' '}
@@ -78,14 +78,6 @@ const DigitalMarketingBenefits = () => {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* Button */}
-          <div className=" mt-10 flex justify-center  pb-4">
-          <div className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
-            <span className="mr-3">Ready to Get Started?</span>
-            <TrendingUp className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
           </div>
         </div>
         </div>

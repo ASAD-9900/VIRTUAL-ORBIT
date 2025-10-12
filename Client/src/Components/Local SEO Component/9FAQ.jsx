@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 
 const FAQ = () => {
-  const [openIndex, setOpenIndex] = useState(0); // First FAQ open by default
+  const [openIndex, setOpenIndex] = useState(0);
   const contentRefs = useRef([]);
 
   const faqs = [
@@ -54,30 +54,29 @@ const FAQ = () => {
 
   return (
     <section className="max-w-full bg-gradient-to-b from-[#0f3166] via-sky-600 to-[#0f3166]">
-      <div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12'>
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12'>
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-3xl font-montserrat lg:text-5xl  text-white mb-2">
-            FAQ About <span className='bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent'>Local SEO Services</span>
+            FAQ About <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-['Playfair_Display',serif] italic">Local SEO Services</span>
           </h2>
           <p className="text-gray-300 text-sm sm:text-lg">
-            Get answers to common questions about local SEO services
+            Get answers to common questions about technical SEO services
           </p>
         </div>
 
         {/* Items */}
-        <div className="space-y-3">
+        <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div 
               key={index} 
-              className="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 bg-white"
+              className="border border-blue-300/30 rounded-lg overflow-hidden shadow-lg shadow-blue-200/50 hover:shadow-xl hover:shadow-blue-300/60 transition-all duration-300 bg-[#0f3166]"
             >
-              {/* Button */}
               <button
-                className={`w-full text-left px-4 sm:px-6 py-4 sm:py-5 font-semibold hover:bg-gray-50 flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-inset transition-all duration-200 ${
+                className={`w-full text-left px-4 sm:px-6 py-4 sm:py-5 font-semibold hover:bg-blue-800/50 flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-inset transition-all duration-200 ${
                   openIndex === index 
-                    ? 'bg-blue-50 text-blue-800' 
-                    : 'bg-white text-gray-800 hover:text-gray-900'
+                    ? 'bg-blue-700/30 text-blue-100' 
+                    : 'bg-[#0f3166] text-white hover:text-blue-100'
                 }`}
                 onClick={() => toggleFaq(index)}
                 aria-expanded={openIndex === index}
@@ -92,8 +91,8 @@ const FAQ = () => {
                   <svg
                     className={`w-4 h-4 sm:w-5 sm:h-5 transition-all duration-300 ease-in-out ${
                       openIndex === index 
-                        ? 'transform rotate-45 text-blue-600' 
-                        : 'transform rotate-0 text-gray-500'
+                        ? 'transform rotate-45 text-blue-200' 
+                        : 'transform rotate-0 text-blue-300'
                     }`}
                     fill="none"
                     stroke="currentColor"
@@ -109,7 +108,7 @@ const FAQ = () => {
               <div
                 id={`faq-content-${index}`}
                 ref={(el) => (contentRefs.current[index] = el)}
-                className="transition-all duration-500 ease-in-out overflow-hidden"
+                className="transition-all duration-500 ease-in-out overflow-hidden bg-[#0f3166]"
                 style={{
                   maxHeight: openIndex === index ? 'fit-content' : '0px',
                   opacity: openIndex === index ? '1' : '0',
@@ -117,8 +116,8 @@ const FAQ = () => {
                 }}
               >
                 <div className="px-4 sm:px-6 pb-4 sm:pb-6">
-                  <div className="border-t border-gray-100 pt-4">
-                    <p className="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed">
+                  <div className="border-t border-blue-400/30 pt-4">
+                    <p className="text-sm sm:text-base lg:text-lg text-blue-50 leading-relaxed">
                       {faq.answer}
                     </p>
                   </div>

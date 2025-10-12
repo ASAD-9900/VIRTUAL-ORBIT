@@ -19,7 +19,7 @@ import WhyChooseVO from "../../Components/SEO Page Components/10WhyChooseVO"
 import Tips from "../../Components/SEO Page Components/11Tips"
 import FAQ from "../../Components/SEO Page Components/12Faq";
 import ContactForm from '../../Components/Global Components/ContactForm'
-
+import Marqee1 from "../../Components/SEO Page Components/Marqee"
 
 const SEO = () => {
   const lenisRef = useRef(null);
@@ -60,14 +60,19 @@ const SEO = () => {
       <Filler/>
       <SeoForYourBusiness/>
       <DiyVsHiringAgency/>
-      <div className="mt-9 mb-9 lg:mt-18 lg:mb-18 bg-white">
-             <Marqee
-              texts={[<span className="text-[#4e38f5]">Virtual Orbit -</span>, "- Local SEO - Ecommerce - AI SEO - Technical SEO - SEO Audits"]}
-              velocity={50}
-              className="custom-scroll-text mb-5"
-             />
+      <div className="lg:mt-20 lg:mb-20">
+      <Process/>
       </div>
-      <Process></Process>
+        <div className="lg:my-5 lg:mt-10 bg-white lg:hidden">
+            <Marqee
+            texts={[<span className="text-[#4e38f5]">Virtual Orbit -</span>, "-  Local SEO"]}
+            velocity={50}
+            className="custom-scroll-text mb-5"
+            />
+        </div>
+      <div className="hidden lg:block">
+      <Marqee1/>
+      </div>
       <Invest/> 
       <WhyChooseVO/>
       <Tips/>

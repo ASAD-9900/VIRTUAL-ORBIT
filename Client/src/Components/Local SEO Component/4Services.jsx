@@ -100,7 +100,7 @@ const Services = () => {
         {/* Header Section */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-montserrat md:text-5xl text-white mb-3">
-            Virtual Orbit's <span className='bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent'>Local SEO Services</span>
+            Virtual Orbit's <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-['Playfair_Display',serif] italic">Local SEO Services</span>
           </h2>
           <p className="text-lg text-blue-200 mb-8">
             Laying the Groundwork for Long-Term Organic Success

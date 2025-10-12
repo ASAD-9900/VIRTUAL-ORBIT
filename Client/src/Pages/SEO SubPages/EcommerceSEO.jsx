@@ -7,7 +7,6 @@ import ContactForm from "../../Components/Global Components/ContactForm"
 import FAQ from "../../Components/Ecommerce SEO Components/FAQ"
 import Pitch from "../../Components/Ecommerce SEO Components/1Pitch"
 import HowDoesItGetLeads from '../../Components/Ecommerce SEO Components/2HowDoesItGetleads'
-import OptimizeYourStore from '../../Components/Ecommerce SEO Components/3OptimizeYourStore'
 import Services from '../../Components/Ecommerce SEO Components/7Services'
 import HireOrDiy from "../../Components/Ecommerce SEO Components/8HireOrDIY"
 import TimeTakes from '../../Components/Ecommerce SEO Components/9TimeItTakes'
@@ -16,7 +15,7 @@ import ShopifySEO from "../../Components/Ecommerce SEO Components/4ShopifySEO"
 import WooCommerceSEO from "../../Components/Ecommerce SEO Components/5WooCommerceSEO"
 import HowToChoose from '../../Components/Ecommerce SEO Components/6HowToChoose'
 import Tips from "../../Components/Ecommerce SEO Components/11Tips"
-
+import Banner from "../../Components/Global Components/Banner"
 import SpiralBG from "../../assets/Difference.png"
 
 
@@ -51,7 +50,7 @@ const EcommerceSEO = () => {
         <Hero></Hero>
         <Pitch></Pitch>
         <HowDoesItGetLeads/>
-        <OptimizeYourStore/>
+        <Banner/>
         <div className='bg-gradient-to-b from-[#0f3064] via-[#2563eb] to-[#0f3064] max-w-full'>
           <ShopifySEO/>
           <WooCommerceSEO/>

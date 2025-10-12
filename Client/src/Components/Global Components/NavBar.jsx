@@ -32,9 +32,9 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/
 
 const digitalMarketingServices = [
   { name: 'Local SEO', description: 'Boost your search engine rankings', href: '/seo-services/local-seo', icon: MagnifyingGlassIcon },
-  { name: 'Technical SEO', description: 'Engage your audience on social platforms', href: '/seo-services/technical-seo', icon: CursorArrowRaysIcon },
   { name: 'AI SEO', description: 'Drive targeted traffic with ads', href: '/seo-services/ai-seo-services', icon: ChartPieIcon },
   { name: 'Ecommerce SEO', description: 'Create compelling content strategies', href: '/seo-services/ecommerce-seo', icon: PencilSquareIcon },
+  { name: 'Technical SEO', description: 'Engage your audience on social platforms', href: '/seo-services/technical-seo', icon: CursorArrowRaysIcon },
   { name: 'SEO Audits', description: 'Reach customers directly in their inbox', href: '/seo-services/seo-audit', icon: MegaphoneIcon },
 ]
 

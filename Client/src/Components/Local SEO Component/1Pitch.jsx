@@ -22,7 +22,7 @@ function Pitch() {
           {/* Content */}
           <div className="space-y-6">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-montserrat text-gray-900 leading-tight">
-              <span className='bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent'>Local SEO</span> Is Essential For Local Businesses 
+              <span className="font-['Playfair_Display',serif] italic bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent">Local SEO</span> Is Essential For Local Businesses 
             </h2>
             
             <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 leading-relaxed">

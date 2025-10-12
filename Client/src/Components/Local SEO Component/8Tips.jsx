@@ -32,7 +32,7 @@ const LocalSEOTips = () => {
         {/* Section Header */}
         <div className="md:text-center md:mb-12">
           <h2 className="text-3xl font-montserrat md:text-5xl text-gray-800 mb-2">
-            How To Optimize Your <span className='bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent'>Google Business Profile?</span>  
+            How To Optimize Your <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-['Playfair_Display',serif] italic">Google Business Profile?</span>  
           </h2>
           <p className="text-gray-400 text-lg font-semibold">
             Create a Lasting Impression Across Search Engines and Your Prospects

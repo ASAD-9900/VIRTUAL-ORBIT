@@ -1,11 +1,10 @@
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { TrendingUp } from 'lucide-react';
-import Shopify from "../../assets/Shopify-Bag.png"
-import ChatGPT from "../../assets/chat-gpt-logo.png";
-import Gemini from "../../assets/gemini-logo.png";
+import GenSEO from "../../assets/Gen-SEO.png"
 import Perplexity from "../../assets/perplexity-logo.png";
-import PatternBG from "../../assets/PatternBG.jpg";
+import Competitor from "../../assets/competitor.png";
+import Rank from "../../assets/seo-rank.png";
 
 const WhatsSEO = () => {
   const ref = useRef(null);
@@ -26,19 +25,15 @@ const WhatsSEO = () => {
   return (
     <section 
       ref={ref}
-      className="max-w-full bg-white bg-cover bg-center bg-no-repeat" 
-      style={{
-        backgroundImage: `url(${PatternBG})`,
-      }}
-    >
-      <div className='max-w-7xl mx-auto px-4 sm:px-6 pt-8 sm:pt-12 lg:pt-16 pb- sm:pb-12 lg:pb-0'>
+      className="max-w-full bg-white bg-gradient-to-b from-[#0f3064] via-[#2563eb] to-[#0f3064]">
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 pt-8 sm:pt-12 sm:pb-12 lg:pb-0'>
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 sm:gap-10 lg:gap-12">
 
           {/* Image Section - first (left on desktop) */}
           <div className="w-full lg:w-1/2 flex justify-center relative">
             <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-none">
               <img 
-                src={Shopify} 
+                src={GenSEO} 
                 alt="Digital marketing analytics dashboard showing online marketing performance" 
                 className="w-full h-auto object-contain"
               />
@@ -55,18 +50,18 @@ const WhatsSEO = () => {
                     repeat: Infinity,
                     ease: "easeInOut"
                   }}
-                  className="absolute top-2 left-1 sm:top-4 sm:left-2 lg:top-8 lg:left-15 p-1 sm:p-2 lg:p-3"
+                  className="absolute top-2 left-1 sm:top-4 sm:left-2 lg:top-12 lg:-left-1 p-1 sm:p-2 lg:p-3"
                 >
-                  <img src={ChatGPT} alt="Google" className="w-12 h-12 sm:w-10 sm:h-10 lg:w-24 lg:h-24 object-contain" />
+                  <img src={Perplexity} alt="Google" className="w-12 h-12 sm:w-10 sm:h-10 lg:w-24 lg:h-24 object-contain" />
                 </motion.div>
                 {/* Rank 1 Badge - Float Up/Down */}
                 <motion.div
                   custom={1}
                   variants={floatingVariants}
                   animate="animate"
-                  className="absolute -top-2 right-1 sm:top-0 sm:right-2 lg:-top-4 lg:-right-0"
+                  className="absolute -top-2 right-1 sm:top-0 sm:right-2 lg:top-55 lg:-right-1"
                 >
-                  <img src={Perplexity} alt="SEO Rank" className="w-28 h-28 sm:w-28 sm:h-28 lg:w-24 lg:h-24 object-contain" />
+                  <img src={Rank} alt="SEO Rank" className="w-28 h-28 sm:w-28 sm:h-28 lg:w-44 lg:h-44 object-contain" />
                 </motion.div>
                 {/* Competitor Badge - Float Up/Down */}
                 <motion.div
@@ -75,7 +70,7 @@ const WhatsSEO = () => {
                   animate="animate"
                   className="absolute bottom-4 left-1 sm:bottom-8 sm:left-2 lg:bottom-30 lg:-left-10"
                 >
-                  <img src={Gemini} alt="Competitor" className="w-28 h-28 sm:w-28 sm:h-28 lg:w-24 lg:h-24 object-contain" />
+                  <img src={Competitor} alt="Competitor" className="w-28 h-28 sm:w-28 sm:h-28 lg:w-44 lg:h-44 object-contain" />
                 </motion.div>
               </div>
             </div>
@@ -84,15 +79,15 @@ const WhatsSEO = () => {
           {/* Content Section - second (right on desktop) */}
           <div className="w-full lg:w-2/3 space-y-4 sm:space-y-6">
             <div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center lg:text-start font-montserrat text-gray-700 mb-3 sm:mb-4 lg:mb-5">
-                Why Your Business Needs <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-['Playfair_Display',serif] italic">AI SEO Services?</span> 
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center lg:text-start font-montserrat text-gray-200 mb-3 sm:mb-4 lg:mb-5">
+                What's <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-['Playfair_Display',serif] italic">Generative Engine Optimzation SEO Services?</span>
               </h2>
               <p className="text-sm sm:text-base lg:text-lg text-center lg:text-start text-blue-600 font-medium">
                 Connect with Your Customers Where They Spend Their Time Online
               </p>
             </div>
             
-            <p className="text-sm sm:text-base lg:text-xl text-gray-700 leading-relaxed text-center lg:text-left">
+            <p className="text-sm sm:text-base lg:text-xl text-white leading-relaxed text-center lg:text-left">
               Digital marketing is the use of online channels, platforms, and technologies to promote your business, products, 
               or services to potential customers. It encompasses everything from search engine optimization (SEO) and social media 
               marketing to{' '}
@@ -114,7 +109,6 @@ const WhatsSEO = () => {
             </div>
           </div>
           
-
         </div>
       </div>
     </section>

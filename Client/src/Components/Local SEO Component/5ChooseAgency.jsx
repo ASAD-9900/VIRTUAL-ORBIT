@@ -21,7 +21,7 @@ const Result
             <div className="space-y-6">
               <div className="space-y-2 text-center">
                 <h2 className="text-3xl sm:text-3xl lg:text-5xl font-montserrat text-white leading-tight">
-                  How To Choose a <span className='bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent'>Local SEO Agency?</span> 
+                  How To Choose a <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-['Playfair_Display',serif] italic">Local SEO Agency?</span> 
                 </h2>
                 <p className="text-gray-400 text-base sm:text-lg font-semibold">
                   Make Your Brand Name More Recognizable
