@@ -31,8 +31,8 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const digitalMarketingServices = [
-  { name: 'Local SEO', description: 'Boost your search engine rankings', href: '/seo-services/local-seo', icon: MagnifyingGlassIcon },
   { name: 'AI SEO', description: 'Drive targeted traffic with ads', href: '/seo-services/ai-seo-services', icon: ChartPieIcon },
+  { name: 'Local SEO', description: 'Boost your search engine rankings', href: '/seo-services/local-seo', icon: MagnifyingGlassIcon },
   { name: 'Ecommerce SEO', description: 'Create compelling content strategies', href: '/seo-services/ecommerce-seo', icon: PencilSquareIcon },
   { name: 'Technical SEO', description: 'Engage your audience on social platforms', href: '/seo-services/technical-seo', icon: CursorArrowRaysIcon },
   { name: 'SEO Audits', description: 'Reach customers directly in their inbox', href: '/seo-services/seo-audit', icon: MegaphoneIcon },
@@ -85,8 +85,8 @@ export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="sm:bg-[#01091c] sm:p-6">
-      <nav aria-label="Global" className="mx-auto sm:bg-white sm:rounded-4xl flex max-w-6xl items-center justify-between p-4 lg:px-8">
+    <header className="sm sm:p-6 lg:sticky lg:top-0 z-50">
+      <nav aria-label="Global" className="mx-auto sm:bg-white border border-blue-500 sm:rounded-4xl flex max-w-6xl items-center justify-between p-4 lg:px-8">
         <div className="flex lg:flex-1 ">
           <a href="/" className="flex -m-1.5 p-1.5 space-x-2">
             <p className="text-gray-800 text-3xl font-extrabold transition duration-300  cursor-pointer">Virtual</p>
@@ -112,7 +112,7 @@ export default function NavBar() {
             </PopoverButton>
             <PopoverPanel
               transition
-              className="absolute left-6/2  ml-2 z-20 mt-10 w-screen max-w-6xl -translate-x-1/2 transform overflow-hidden rounded-3xl bg-white shadow-2xl ring-1 ring-gray-900/5 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
+              className="border border-blue-500 absolute left-6/2  ml-2 z-20 mt-10 w-screen max-w-6xl -translate-x-1/2 transform overflow-hidden rounded-3xl bg-white shadow-2xl ring-1 ring-gray-900/5 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
             >
               <div className="p-8">
                 

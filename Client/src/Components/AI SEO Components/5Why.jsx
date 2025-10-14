@@ -56,8 +56,8 @@ const DigitalMarketingBenefits = () => {
         <div className='mb-6'>
             <h2 className="text-4xl font-montserrat md:text-5xl lg:text-5xl text-center  text-white mt-8 mb-8 md:mb-15">
               How To Do {' '}
-              <span className="bg-gradient-to-r text-bold from-orange-400 via-pink-400  to-purple-500 bg-clip-text text-transparent">
-                Technical SEO 
+              <span className="font-['Playfair_Display',serif] italic bg-gradient-to-r text-bold from-orange-400 via-pink-400  to-purple-500 bg-clip-text text-transparent">
+                AI SEO 
               </span> For Your Webiste?
                
             </h2>
@@ -69,7 +69,7 @@ const DigitalMarketingBenefits = () => {
                 </div>
                 
                 <div className="flex-1">
-                  <h4 className="text-lg font-semibold text-white mb-3">
+                  <h4 className="text-lg  font-semibold text-white mb-3">
                     {title}
                   </h4>
                   <p className="text-white leading-relaxed text-sm md:text-base">

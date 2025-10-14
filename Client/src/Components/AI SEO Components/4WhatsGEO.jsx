@@ -30,7 +30,7 @@ const WhatsSEO = () => {
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 sm:gap-10 lg:gap-12">
 
           {/* Image Section - first (left on desktop) */}
-          <div className="w-full lg:w-1/2 flex justify-center relative">
+          <div className="w-full lg:w-1/2 flex justify-center relative hidden lg:block">
             <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-none">
               <img 
                 src={GenSEO} 
@@ -79,15 +79,15 @@ const WhatsSEO = () => {
           {/* Content Section - second (right on desktop) */}
           <div className="w-full lg:w-2/3 space-y-4 sm:space-y-6">
             <div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center lg:text-start font-montserrat text-gray-200 mb-3 sm:mb-4 lg:mb-5">
+              <h2 className="text-4xl md:text-5xl text-center lg:text-start font-montserrat text-gray-200 mb-3 sm:mb-4 lg:mb-5">
                 What's <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-['Playfair_Display',serif] italic">Generative Engine Optimzation SEO Services?</span>
               </h2>
-              <p className="text-sm sm:text-base lg:text-lg text-center lg:text-start text-blue-600 font-medium">
+              <p className="text-base md:text-xl text-center lg:text-start text-gray-300 font-medium">
                 Connect with Your Customers Where They Spend Their Time Online
               </p>
             </div>
             
-            <p className="text-sm sm:text-base lg:text-xl text-white leading-relaxed text-center lg:text-left">
+            <p className="text-lg lg:text-xl text-white leading-relaxed text-center lg:text-left">
               Digital marketing is the use of online channels, platforms, and technologies to promote your business, products, 
               or services to potential customers. It encompasses everything from search engine optimization (SEO) and social media 
               marketing to{' '}

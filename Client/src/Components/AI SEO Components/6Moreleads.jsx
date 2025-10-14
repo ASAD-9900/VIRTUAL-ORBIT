@@ -37,15 +37,15 @@ const WhatsSEO = () => {
           {/* Content Section - second (right on desktop) */}
           <div className="w-full lg:w-2/3 space-y-4 sm:space-y-6">
             <div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center lg:text-start font-montserrat text-gray-700 mb-3 sm:mb-4 lg:mb-5">
+              <h2 className="text-4xl md:text-5xl text-center lg:text-start font-montserrat text-gray-700 mb-3 sm:mb-4 lg:mb-5">
                 How <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-['Playfair_Display',serif] italic">AI SEO Services</span> Get More Leads?
               </h2>
-              <p className="text-sm sm:text-base lg:text-lg text-center lg:text-start text-blue-600 font-medium">
+              <p className="text-base md:text-xl text-center lg:text-start text-blue-600 font-medium">
                 Connect with Your Customers Where They Spend Their Time Online
               </p>
             </div>
             
-            <p className="text-sm sm:text-base lg:text-xl text-gray-700 leading-relaxed text-center lg:text-left">
+            <p className="text-lg lg:text-xl text-gray-700 leading-relaxed text-center lg:text-left">
               Digital marketing is the use of online channels, platforms, and technologies to promote your business, products, 
               or services to potential customers. It encompasses everything from search engine optimization (SEO) and social media 
               marketing to{' '}

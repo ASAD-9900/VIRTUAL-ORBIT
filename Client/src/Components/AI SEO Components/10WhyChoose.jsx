@@ -61,8 +61,8 @@ const ScalenutSection = () => {
         <div className="relative bg-gradient-to-br from-[#002855] via-[#003366] to-[#002855] px-4 md:px-6 pt-8 md:pt-12 pb-12 md:pb-8 mx-4 md:mx-8 rounded-3xl md:rounded-4xl">
           <div className="max-w-7xl mx-auto">
             {/* Title */}
-            <h2 className="text-white text-2xl md:text-4xl lg:text-5xl font-base text-center mb-6 md:mb-3 px-2">
-              Why choose Virtual Orbit?
+            <h2 className="text-white text-4xl md:text-5xl font-base text-center mb-6 md:mb-3 px-2">
+              Why Choose Virtual Orbit?
             </h2>
             <div className="p-4 md:p-6 lg:p-8 max-w-6xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-6 md:gap-x-6 md:gap-y-6 lg:gap-x-8 lg:gap-y-8">
@@ -71,7 +71,7 @@ const ScalenutSection = () => {
                     <div className="text-white mt-0.5 md:mt-1 flex-shrink-0">
                       {feature.icon}
                     </div>
-                    <p className="text-white text-sm md:text-base leading-relaxed">
+                    <p className="text-white text-base md:text-lg leading-relaxed">
                       {feature.title}
                     </p>
                   </div>

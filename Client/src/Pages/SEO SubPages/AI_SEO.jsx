@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect, useRef } from "react";
+import Lenis from "lenis";
+
 import Marqee from "../../Components/Global Components/Marqee"
 import HeroSubPage from "../../Components/Global Components/HeroSubPage"
 import ContactForm from "../../Components/Global Components/ContactForm"
@@ -16,14 +18,44 @@ import AEO from "../../Components/AI SEO Components/3WhatsAEO"
 import Banner from "../../Components/Global Components/Banner"
 import AiMarqee from "../../Components/AI SEO Components/Marqee"
 import WhyChoose from "../../Components/AI SEO Components/10WhyChoose"
-
+import AiSeoHero from "../../assets/ai-seo-hero.png"
 const AI_SEO = () => {
+    const lenisRef = useRef(null);
+
+  useEffect(() => {
+    const lenis = new Lenis({
+      lerp: 0.1,   
+      smooth: true,
+      wheelMultiplier: 1.3, 
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+    lenisRef.current = lenis;
+
+    
+    lenis.scrollTo(0);
+
+    return () => {
+      lenis.destroy(); 
+    };
+  }, []);
   return (
     <div>
-         <HeroSubPage title="Transform Your Website Into a Lead Generation "
-                  subtitle="Get a free custom proposal showing exactly how we'll increase your conversions and grow your business">
-        </HeroSubPage>
+        <HeroSubPage 
+          firstHeadingText="AI Marketing Reinvented for Startups"
+          secondHeadingText="Empower Your Business Online"
+          descriptionText="Drive conversions intelligently with a unified, AI-powered marketing experience AI-powered marketing experience AI-powered marketing experience"
+          // imageUrl={AiSeoHero}
+          // imageAlt="Marketing dashboard illustration"
+        />
+        <div className="lg:mt-8">
         <Pitch></Pitch>
+        </div>
         <WhatsAiSEO></WhatsAiSEO>
         <div className='bg-gradient-to-b from-[#0f3064] via-[#2563eb] to-[#0f3064] max-w-full'>
           <AEO/>
@@ -39,7 +71,9 @@ const AI_SEO = () => {
             className="custom-scroll-text mb-5"
             />
         </div>
+        <div className="hidden lg:block">
         <AiMarqee/>
+        </div>
         <Need/>
         <ChooseAgency/>
         <WhyChoose/>

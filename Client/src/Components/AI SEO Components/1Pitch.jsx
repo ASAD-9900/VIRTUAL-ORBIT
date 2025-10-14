@@ -54,13 +54,13 @@ const AiSection = () => {
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-sans md:text-5xl lg:text-6xl text-gray-700 mb-4">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-sans text-gray-700 mb-4">
             The Best AI SEO Agency for{' '}
             <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-['Playfair_Display',serif] italic">
               AI Visibility
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-green-600 font-semibold">
+          <p className="text-base md:text-2xl text-blue-600 font-semibold">
             Helping Businesses Dominate Large Language Model AI Search
           </p>
         </div>

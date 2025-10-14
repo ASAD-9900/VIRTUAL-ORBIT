@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { TrendingUp } from 'lucide-react';
-import AiSEO from "../../assets/Ai-Seo-Services.png";
+import ConfusedRobot from "../../assets/confused-robot.webp";
 import ChatGPT from "../../assets/chat-gpt-logo.png";
 import Gemini from "../../assets/gemini-logo.png";
 import Perplexity from "../../assets/perplexity-logo.png";
@@ -36,15 +36,15 @@ const WhatsSEO = () => {
           {/* Content Section - Static now */}
           <div className="w-full lg:w-2/3 space-y-4 sm:space-y-6">
             <div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center lg:text-start font-montserrat text-gray-700 mb-3 sm:mb-4 lg:mb-5">
+              <h2 className="text-4xl md:text-5xl text-center lg:text-start font-montserrat text-gray-700 mb-3 sm:mb-4 lg:mb-5">
                 How To Choose An <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-['Playfair_Display',serif] italic">AI SEO Agency?</span> 
               </h2>
-              <p className="text-sm sm:text-base lg:text-lg text-center lg:text-start text-blue-600 font-medium">
+              <p className="text-lg lg:text-xl text-center lg:text-start text-blue-600 font-medium">
                 Connect with Your Customers Where They Spend Their Time Online
               </p>
             </div>
             
-            <p className="text-sm sm:text-base lg:text-xl text-gray-700 leading-relaxed text-center lg:text-left">
+            <p className="text-lg lg:text-xl text-gray-700 leading-relaxed text-center lg:text-left">
               Digital marketing is the use of online channels, platforms, and technologies to promote your business, products, 
               or services to potential customers. It encompasses everything from search engine optimization (SEO) and social media 
               marketing to{' '}
@@ -53,7 +53,7 @@ const WhatsSEO = () => {
               </a>
               . The goal is to reach your target audience where they're already spending their time - online.
             </p>
-            <p className="text-sm sm:text-base lg:text-xl text-gray-700 leading-relaxed text-center lg:text-left">
+            <p className="text-lg lg:text-xl text-gray-700 leading-relaxed text-center lg:text-left">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto error eius sed accusantium expedita placeat autem beatae dolore eos nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             
@@ -70,7 +70,7 @@ const WhatsSEO = () => {
           <div className="w-full lg:w-1/2 flex justify-center relative">
             <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-none">
               <img 
-                src={AiSEO} 
+                src={ConfusedRobot} 
                 alt="Digital marketing analytics dashboard showing online marketing performance" 
                 className="w-full h-auto object-contain"
               />
