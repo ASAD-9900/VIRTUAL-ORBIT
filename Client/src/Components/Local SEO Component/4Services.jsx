@@ -4,74 +4,68 @@ const Services = () => {
   const services = [
     {
       number: '01',
-      title: 'Seller Account Setup',
+      title: 'Google Business Profile Optimization',
       description: [
-        "Our Amazon SEO company works directly with an ",
-        { type: "link", text: "Amazon sales agent", url: "https://sellercentral.amazon.com", external: true },
-        " to guide you through the entire setup process, including account creation, product entry and inbound shipping plan configuration. We ensure your seller account is compliant and well-optimized to start generating sales from day one. Our ",
-        { type: "link", text: "Amazon SEO agency", url: "/amazon-seo-services", external: false },
-        " handles every technical detail so you can focus on your product development and innovation."
+        "We optimize your ",
+        { type: "link", text: "Google Business Profile", url: "https://www.google.com/business/", external: true },
+        " with accurate business details, targeted keywords, and engaging visuals to boost local visibility. Our local SEO experts ensure your profile ranks higher in map packs and local search results, making it easier for nearby customers to find and contact your business. We handle everything from category selection to attribute optimization and compelling business descriptions."
       ]
     },
     {
       number: '02',
-      title: 'Seller Brand Setup',
+      title: 'Local Keyword Research & Optimization',
       description: [
-        "Protecting your brand is just as important as promoting it. We support you through the ",
-        { type: "link", text: "Amazon Brand Registry", url: "https://brandregistry.amazon.com", external: true },
-        " setup process by coordinating with the Amazon client team and providing expert consultation. Once registered, your brand becomes eligible for ",
-        { type: "link", text: "A+ Content", url: "https://advertising.amazon.com/solutions/products/a-plus-content", external: true },
-        ", Brand Stores and other premium tools that help you differentiate your products and safeguard your intellectual property against unauthorized sellers."
+        "Effective local SEO starts with identifying the right keywords. Our ",
+        { type: "link", text: "local SEO company", url: "/local-seo", external: false },
+        " conducts comprehensive keyword research to uncover location-specific search terms with high commercial intent. We analyze how your local audience searches and prioritize phrases like 'near me' queries to connect you with nearby customers actively looking for your services, ensuring your website content targets local search intent."
       ]
     },
     {
       number: '03',
-      title: 'Amazon Account Audit',
+      title: 'Local Citations & NAP Consistency',
       description: [
-        "Our Amazon SEO company conducts a comprehensive audit of your existing account and product listings. We uncover any issues that need to be addressed, evaluate the quality of your existing Amazon listings and campaigns and provide a strategic implementation plan to take your product sales to the next level. Once approved, we optimize your product listings to improve ",
-        { type: "link", text: "search rankings", url: "/seo-services", external: false },
-        " for high-volume keywords within your product categories."
+        "We build accurate local citations and ensure your Name, Address, and Phone Number (NAP) are consistent across all major directories and platforms. Our team submits your business information to relevant local directories, industry-specific listings, and ",
+        { type: "link", text: "citation sites", url: "https://www.brightlocal.com/", external: true },
+        " to boost trust with search engines. This consistency improves your local search visibility and helps potential customers find accurate information about your business everywhere online."
       ]
     },
     {
       number: '04',
-      title: 'Competitor Research',
+      title: 'On-Page Local SEO',
       description: [
-        "Winning on Amazon requires knowing who you're up against. Our ",
-        { type: "link", text: "Amazon SEO specialists", url: "/team", external: false },
-        " identify your direct competitors and uncover strategies they're using to succeed so we can help you do it better. From pricing strategies and coupon deployment to offensive targeting and positioning within related categories, our competitor research enables us to craft an SEO Amazon strategy that closes gaps and carves out more market share for your brand. This insight also helps shape your brand narrative and guide future promotional efforts."
+        "Our local SEO services include comprehensive on-page optimization tailored for local search. We optimize meta titles, meta descriptions, headers, and content with location-specific keywords. We also implement ",
+        { type: "link", text: "schema markup", url: "https://schema.org/LocalBusiness", external: true },
+        " for local businesses, optimize images with geo-targeted alt tags, and create location-specific landing pages that improve your visibility in local search results and drive qualified traffic to your website."
       ]
     },
     {
       number: '05',
-      title: 'Amazon Listing Optimization',
+      title: 'Review Management & Reputation',
       description: [
-        "Our Amazon SEO agency writes unique product descriptions, optimized titles and content that encourages shoppers to buy. We also work with your existing creative assets to create a dynamic image set designed to capture interest and inform and persuade consumers to buy. For ",
-        { type: "link", text: "Amazon Brand Registered sellers", url: "https://brandregistry.amazon.com", external: true },
-        ", our team develops compelling A+ Content designed to share your brand story, unique product details and comparison charts that help shoppers make the best purchase decisions. For Brand Registered sellers with a variety of products, we also develop a custom ",
-        { type: "link", text: "Amazon Brand Store", url: "https://advertising.amazon.com/solutions/products/stores", external: true },
-        " that allows shoppers to browse your full catalog."
+        "Positive reviews significantly influence local search rankings and customer trust. Our ",
+        { type: "link", text: "local SEO specialists", url: "/team", external: false },
+        " implement strategies to encourage and manage customer reviews across Google, Yelp, and other platforms. We set up review monitoring systems, create review generation campaigns, and help you respond professionally to all feedback, building a strong online reputation that improves your local SEO performance and drives more conversions."
       ]
     },
     {
       number: '06',
-      title: 'Amazon Review Strategies',
+      title: 'Local Link Building & Outreach',
       description: [
-        "Ratings and reviews have a big impact on Amazon SEO and in the minds of Amazon shoppers. That's why Thrive recommends taking a proactive approach to Amazon ratings and reviews. Our Amazon strategists set up automated rating and review requests that adhere to ",
-        { type: "link", text: "Amazon's strict policies", url: "https://sellercentral.amazon.com/gp/help/external/G201929730", external: true },
-        ". These automated requests will be branded, personalized and timed to the seller's specifications for optimal review collection. This service also includes review notifications that enable sellers to promptly address any poor customer experiences, increasing the likelihood of getting negative reviews removed or amended."
+        "We build high-quality, location-specific backlinks through strategic outreach and partnerships with local websites, newspapers, business associations, and organizations. Our ",
+        { type: "link", text: "link building strategies", url: "/link-building", external: false },
+        " focus on earning authoritative links from locally relevant sources that enhance your domain authority, improve search rankings, and drive targeted traffic from within your geographic area. This localized approach strengthens your presence in local search results."
       ]
     }
   ];
 
-  // render descriptions with links
+  // Render descriptions with links
   const DescriptionWithLinks = ({ description }) => {
     if (typeof description === 'string') {
-      return <p className="text-gray-200 leading-relaxed text-sm md:text-base">{description}</p>;
+      return <p className="text-gray-800 leading-relaxed text-sm md:text-base">{description}</p>;
     }
 
     return (
-      <p className="text-gray-200 leading-relaxed text-sm md:text-base">
+      <p className="text-gray-700 leading-relaxed text-sm md:text-base">
         {description.map((item, index) => {
           if (typeof item === 'string') {
             return <span key={index}>{item}</span>;
@@ -95,14 +89,29 @@ const Services = () => {
   };
 
   return (
-    <section className="bg-gradient-to-b from-[#0f3064] via-[#2563eb] to-[#0f3064] max-w-full">
-      <div className='max-w-7xl mx-auto px-6 py-12'>
+    <section className="relative bg-white max-w-full min-h-screen w-full">
+      {/* White Sphere Grid Background */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          background: "white",
+          backgroundImage: `
+            linear-gradient(to right, rgba(71,85,105,0.3) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(71,85,105,0.3) 1px, transparent 1px),
+            radial-gradient(circle at 50% 50%, rgba(139,92,246,0.25) 0%, rgba(139,92,246,0.1) 40%, transparent 80%)
+          `,
+          backgroundSize: "32px 32px, 32px 32px, 100% 100%",
+        }}
+      />
+
+      {/* Content Layer */}
+      <div className="relative max-w-7xl mx-auto px-6 py-12 z-10">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-montserrat md:text-5xl text-white mb-3">
+          <h2 className="text-3xl font-montserrat md:text-5xl text-gray-700 mb-3">
             Virtual Orbit's <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-['Playfair_Display',serif] italic">Local SEO Services</span>
           </h2>
-          <p className="text-lg text-blue-200 mb-8">
+          <p className="text-lg text-blue-600 mb-8">
             Laying the Groundwork for Long-Term Organic Success
           </p>
         </div>
@@ -110,14 +119,17 @@ const Services = () => {
         {/* Services Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-10">
           {services.map(({ number, title, description }) => (
-            <div key={number} className="relative bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div
+              key={number}
+              className="relative bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300"
+            >
               {/* Large Number */}
-              <div className="text-6xl md:text-7xl font-bold text-gray-400 mb-4">
+              <div className="text-6xl md:text-7xl font-bold text-gray-600 mb-4">
                 {number}
               </div>
               
               {/* Service Title */}
-              <h3 className="text-xl md:text-2xl font-semibold text-white mb-4 -mt-2">
+              <h3 className="text-xl md:text-2xl font-semibold text-gray-700 mb-4 -mt-2">
                 {title}
               </h3>
               

@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { motion } from 'framer-motion';
 import { TrendingUp } from 'lucide-react';
-import Listing from "../../assets/google-listing.png"
+import GenSEO from "../../assets/Gen-SEO.png"
+import Perplexity from "../../assets/perplexity-logo.png";
+import Competitor from "../../assets/competitor.png";
+import Rank from "../../assets/seo-rank.png";
 
 const benefitsLeft = [
   'Stronger local community outreach',
@@ -22,54 +26,109 @@ const benefitsRight = [
   'Increased trustworthiness and market authority',
 ];
 
-const LocalSEOVital = () => {
+const WhatsSEO = () => {
+  const ref = useRef(null);
+
+  // Floating animation variants for badges
+  const floatingVariants = {
+    animate: (custom) => ({
+      y: [0, -20, 0],
+      transition: {
+        duration: 3 + custom * 0.5,
+        repeat: Infinity,
+        ease: "easeInOut",
+        delay: custom * 0.3
+      }
+    })
+  };
+
   return (
-    <section className='max-w-full bg-[#0f3064]'>
-      <div className="max-w-7xl  mx-auto px-4 py-12">
-        {/* Header Section */}
-        <div className="md:text-center md:mb-12">
-          <h2 className="text-3xl font-montserrat md:text-5xl text-white mb-2">
-            How To Optimize Your <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-['Playfair_Display',serif] italic">Google Business Profile?</span>  
-          </h2>
-          <p className="text-gray-400 text-lg font-semibold">
-            Create a Lasting Impression Across Search Engines and Your Prospects
-          </p>
-        </div>
+    <section 
+      ref={ref}
+      className="max-w-full bg-white bg-gradient-to-b from-[#0f3064] via-[#2563eb] to-[#0f3064]">
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 pt-8 sm:pt-12 sm:pb-12 lg:pb-0'>
+        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 sm:gap-10 lg:gap-12">
 
-        {/* Intro Paragraph */}
-        <p className="text-white text-lg leading-relaxed max-w-5xl mx-auto mb-12">
-          In today's competitive digital landscape, investing in the best local SEO services could mean the difference between a thriving business and a failing establishment. Where does local digital marketing fall in your campaign priorities?
-        </p>
-
-        {/* Main Content Section */}
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-4 max-w-6xl mx-auto mb-12">
-          {/* Image Side */}
-          <div className="lg:w-1/2 flex justify-center">
-            <img
-              src={Listing}
-              alt="Local SEO Illustration"
-              className="max-w-full h-auto w-150"
-            />
+          {/* Image Section - first (left on desktop) */}
+          <div className="w-full lg:w-1/2 flex justify-center relative hidden lg:block">
+            <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-none">
+              <img 
+                src={GenSEO} 
+                alt="Digital marketing analytics dashboard showing online marketing performance" 
+                className="w-full h-auto object-contain"
+              />
+              {/* Floating Elements */}
+              <div className="absolute inset-0">
+                {/* Google - Diagonal Animation */}
+                <motion.div
+                  animate={{
+                    x: [0, 10, 0],
+                    y: [0, 10, 0]
+                  }}
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                  className="absolute top-2 left-1 sm:top-4 sm:left-2 lg:top-12 lg:-left-1 p-1 sm:p-2 lg:p-3"
+                >
+                  <img src={Perplexity} alt="Google" className="w-12 h-12 sm:w-10 sm:h-10 lg:w-24 lg:h-24 object-contain" />
+                </motion.div>
+                {/* Rank 1 Badge - Float Up/Down */}
+                <motion.div
+                  custom={1}
+                  variants={floatingVariants}
+                  animate="animate"
+                  className="absolute -top-2 right-1 sm:top-0 sm:right-2 lg:top-55 lg:-right-1"
+                >
+                  <img src={Rank} alt="SEO Rank" className="w-28 h-28 sm:w-28 sm:h-28 lg:w-44 lg:h-44 object-contain" />
+                </motion.div>
+                {/* Competitor Badge - Float Up/Down */}
+                <motion.div
+                  custom={2}
+                  variants={floatingVariants}
+                  animate="animate"
+                  className="absolute bottom-4 left-1 sm:bottom-8 sm:left-2 lg:bottom-30 lg:-left-10"
+                >
+                  <img src={Competitor} alt="Competitor" className="w-28 h-28 sm:w-28 sm:h-28 lg:w-44 lg:h-44 object-contain" />
+                </motion.div>
+              </div>
+            </div>
           </div>
 
-          {/* Text Content Side */}
-          <div className="lg:w-1/2 space-y-6">
-            <p className="text-white text-lg leading-relaxed">
-              A MarketingSherpa study determined which type of search had the biggest impact on brands' marketing objectives and found that almost <span className="font-bold text-blue-600">54%</span> of respondents consider <span className="font-bold text-blue-600">local search</span> to have the most positive impact on their digital marketing efforts.
+          {/* Content Section - second (right on desktop) */}
+          <div className="w-full lg:w-2/3 space-y-4 sm:space-y-6">
+            <div>
+              <h2 className="text-4xl md:text-5xl text-center lg:text-start font-montserrat text-gray-200 mb-3 sm:mb-4 lg:mb-5">
+                How To Optimize Your Business For <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-purple-500 bg-clip-text text-transparent font-['Playfair_Display',serif] italic">Local SEO Services?</span>
+              </h2>
+              <p className="text-base md:text-xl text-center lg:text-start text-gray-300 font-medium">
+                Connect with Your Customers Where They Spend Their Time Online
+              </p>
+            </div>
+            
+            <p className="text-lg lg:text-xl text-white leading-relaxed text-center lg:text-left">
+              Digital marketing is the use of online channels, platforms, and technologies to promote your business, products, 
+              or services to potential customers. It encompasses everything from search engine optimization (SEO) and social media 
+              marketing to{' '}
+              <a href="#" className="text-blue-700 underline hover:text-blue-800 font-medium">
+                email campaigns and pay-per-click advertising
+              </a>
+              . The goal is to reach your target audience where they're already spending their time - online.
             </p>
-
-            <p className="text-white text-lg leading-relaxed">
-              Evidently, digital dominance has made it vital for businesses of all sizes to concentrate their efforts on local SEO optimization. It is a critical strategy for acquiring qualified leads and converting them into sales. If you don't have a local SEO strategy in place, you could be doing more harm to your business than you initially realize.
-            </p>
-
+            {/* <p className="text-sm sm:text-base lg:text-xl text-gray-700 leading-relaxed text-center lg:text-left">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto error eius sed accusantium expedita placeat autem beatae dolore eos nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p> */}
+            
             {/* button */}
-            <div className="pt-4 sm:pt-6 pb-4 flex justify-center lg:justify-start">
+            <div className="pt-4 sm:pt-6 lg:pt-5 pb-4 flex justify-center lg:justify-start">
               <div className="inline-flex items-center px-5 py-2.5 sm:px-6 sm:py-3 lg:px-8 lg:py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-xs sm:text-sm lg:text-base font-semibold rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
                 <span className="mr-2 sm:mr-3">Ready to Get Started?</span>
                 <TrendingUp className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </div>
             </div>
           </div>
+          
         </div>
 
         {/* Benefits Section */}
@@ -139,9 +198,12 @@ const LocalSEOVital = () => {
             </svg>
           </div>
         </div>
+
+
+
       </div>
     </section>
   );
 };
 
-export default LocalSEOVital;
+export default WhatsSEO;

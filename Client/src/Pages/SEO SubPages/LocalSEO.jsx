@@ -14,8 +14,10 @@ import Tips from "../../Components/Local SEO Component/8Tips"
 import TimeItTakes from "../../Components/Local SEO Component/6TimeItTakes"
 import WorthIt from "../../Components/Local SEO Component/7Worth"
 import SpiralBG from "../../assets/Difference.png"
-import GscDash from "../../assets/Analytics.png"
-
+import Banner from "../../Components/Global Components/Banner"
+import Marqee2 from "../../Components/Local SEO Component/Marqee"
+import Filler from "../../Components/Local SEO Component/Filler"
+import WhyChooseUs from "../../Components/Local SEO Component/WhyChooseUs"
 
 const LocalSEO = () => {
   const lenisRef = useRef(null);
@@ -48,23 +50,27 @@ const LocalSEO = () => {
           firstHeadingText="Local Business Marketing That" 
           secondHeadingText="Dominates Your Competition" 
           descriptionText="Get more customers, increase revenue, and build lasting brand recognition with our proven marketing strategies."
-          imageUrl={GscDash}
-          imageAlt="Different dashboard"
         />
         <Pitch></Pitch>
         <HowDoesItGetleads></HowDoesItGetleads>
         <HowToOptimize></HowToOptimize>
-        <Services></Services>
         <ChooseAgency></ChooseAgency>
-          <div className="my-8 lg:my-5 mb- bg-white">
+        <Banner/>
+          <div className="my-8 lg:my-5 mb- bg-white lg:hidden">
               <Marqee
               texts={[<span className="text-[#4e38f5]">Virtual Orbit -</span>, "-  Local SEO"]}
               velocity={50}
               className="custom-scroll-text mb-5"
               />
         </div>
+        <Services></Services>
+        <div>
+          <Marqee2/>
+        </div>
         <TimeItTakes/>
         <WorthIt/>
+        <Filler/>
+        <WhyChooseUs/>
         <Tips></Tips>
         <FaqSection></FaqSection>
         <div className="bg-cover bg-center bg-no-repeat w-full 
