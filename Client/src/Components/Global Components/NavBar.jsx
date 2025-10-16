@@ -85,12 +85,11 @@ export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="sm sm:p-6 lg:sticky lg:top-0 z-50">
-      <nav aria-label="Global" className="mx-auto sm:bg-white border border-blue-500 sm:rounded-4xl flex max-w-6xl items-center justify-between p-4 lg:px-8">
+    <header className="sm:p-6 lg:sticky lg:top-0 z-50">
+      <nav aria-label="Global" className="mx-auto sm:bg-white lg:border border-blue-500 sm:rounded-4xl flex max-w-6xl items-center justify-between p-4 lg:px-8">
         <div className="flex lg:flex-1 ">
-          <a href="/" className="flex -m-1.5 p-1.5 space-x-2">
-            <p className="text-gray-800 text-3xl font-extrabold transition duration-300  cursor-pointer">Virtual</p>
-            <p className="text-blue-600 text-3xl font-extrabold transition duration-300  cursor-pointer">Orbit</p>
+          <a href="/" className="flex -m-1.5 p-1.5 space-x-0">
+            <p className="text-blue-600 text-4xl font-extrabold transition duration-300 font-['Bungee_Shade']   cursor-pointer">V<span className="text-gray-800 text-3xl -mb-4 font-extrabold transition duration-300 font-['Bungee_Shade'] cursor-pointer">aphers</span></p>
           </a>
         </div>
         <div className="flex lg:hidden">
