@@ -79,6 +79,7 @@ const HomeHero = ({
                 lg:w-[600px] lg:h-[600px] lg:top-[50%] lg:right-[33%]
                 xl:w-[700px] xl:h-[700px] xl:top-[55%] xl:right-[26%]
                 -translate-y-1/2
+                2xl:w-[700px] xl:h-[700px] xl:top-[55%] xl:right-[32%]
               "
             >
               <Orb hue={0} hoverIntensity={0.35} rotateOnHover forceHoverState={false} />
